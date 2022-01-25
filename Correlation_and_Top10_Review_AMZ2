@@ -1,0 +1,446 @@
+Script started on 2021-10-21 02:01:22+00:00 [TERM="screen" TTY="/dev/pts/1" COLUMNS="133" LINES="39"]
+
+1-3.----------------------------------------------------------------------------------------
+1-3.----------------------------------------------------------------------------------------
+luong@f6linux12:~$ mkdir a3
+luong@f6linux12:~$ mkdir ~/a3/CUSTOMERS[K[K[K[K[K[K[K[K[KPRODY[KUCTS
+luong@f6linux12:~$ mkdir ~/a3/PRODUCTSCUSTOMERSls[Kfor file in ~/a2/CUSTOMERS/*.txt; do median=`sort -n -k 2 $file | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' $file M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir ~/a3/CUSTOMERS[1PPRODUCTS[K
+
+---------------------------------WORK ON PRODUCTS-----------------------------------
+luong@f6linux12:~$ for file in ~/a2/PRODUCTS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; median=`sort -nk2 $file | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' $file > ~/a3/PRODUCTS/$id.BINARY.txt; doneMMcd ~[K
+[K
+[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsrm *.txtls[K[Kcd ~/a3/PRODUCTS/
+
+luong@f6linux12:~/a3/PRODUCTS$ head 0060392452.BINARY.txt 
+1 1
+2 1
+5 1
+4 1
+4 0
+4 0
+1 1
+5 0
+1 1
+1 1
+luong@f6linux12:~/a3/PRODUCTS$ head 0060392452.BINARY.txt [10Pcd ~/a3/PRODUCTS/for file in ~/a2/PRODUCTS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; median=`sort -nk2 $file | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' $file > ~/a3/PRODUCTS/$id.BINARY.txt; done[C[1P[1P[1P[1P[1P[1P[1P[1@C[1@U[C[1@S[1@T[1@O[1@M[1@E[1@R[C[1@S[1PMM[C[C[C[C[C[C[C[C[C[C[Ccd ~/a3/PRODUCTS/[K
+[K
+[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K
+
+
+----------------------------------------WORK ON CUSTOMERS(TESTED ON CUSTOMER: 20595117)--------------------------------------------
+luong@f6linux12:~$ for file in ~/a2/CUSTOMERS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; median=`sort -nk2 $file | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' $file > ~/a3/CUSTOMERS/$id.BINARY.txt; doneMMcd ~[K
+[K
+[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+luong@f6linux12:~$ cd ~for file in ~/a2/CUSTOMERS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; median=`sort -nk2 $file | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' $file > ~/a3/CUSTOMERS/$id.BINARY.txt; doneMMcd ~[K
+[K
+[KMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead 0060392452.BINARY.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pcd ~/a3/PRODUCTS/[K[K[K[K[K[K[K[K[KCUSTOMe[KERS/
+
+luong@f6linux12:~/a3/CUSTOMERS$ ls
+20595117.BINARY.txt             49693975.BINARY.txt             51110953.BINARY.txt             52517734.BINARY.txt
+20595117.txt.BINARY.BINARY.txt  49693975.txt.BINARY.BINARY.txt  51110953.txt.BINARY.BINARY.txt  52517734.txt.BINARY.BINARY.txt
+.......
+49447323.BINARY.txt             51065232.BINARY.txt             52500542.BINARY.txt             53084107.BINARY.txt
+49447323.txt.BINARY.BINARY.txt  51065232.txt.BINARY.BINARY.txt  52500542.txt.BINARY.BINARY.txt  53084107.txt.BINARY.BINARY.txt
+
+luong@f6linux12:~/a3/CUSTOMERS$ cd ~
+luong@f6linux12:~$  median=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'` median=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'`[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K
+
+luong@f6linux12:~$ $[Kecho $median
+4
+luong@f6linux12:~$ head ~a2[K[K/[K[K~/a/[K2/P[KCUSTOMERS/20595117.txt
+5	0
+5	0
+5	4
+5	2
+5	2
+5	0
+5	2
+5	6
+4	6
+5	1
+
+luong@f6linux12:~$ median=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' ~/a2/CUSTOMERS/20595117.txt > ~/20595117.txt.testM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead ~/a2/CUSTOMERS/20595117.txt[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pecho $mediantail 20595117.txt.test [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pecho $medianhead ~/a2/CUSTOMERS/20595117.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmedian=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' ~/a2/CUSTOMERS/20595117.txt > ~/20595117.txt.testM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead ~/a2/CUSTOMERS/20595117.txt[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pecho $mediantail 20595117.txt.test [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~[Khead 20595117.txt.test 
+5 0
+5 0
+5 1
+5 0
+5 0
+5 0
+5 0
+5 1
+4 1
+5 0
+
+luong@f6linux12:~$ head ~/a3/CUSTOMERS/20595117.BINARY.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17P20595117.txt.tes[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmedian=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' ~/a2/CUSTOMERS/20595117.txt > ~/20595117.txt.testM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead ~/a2/CUSTOMERS/20595117.txt[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmedian=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' ~/a2/CUSTOMERS/20595117.txt > ~/20595117.txt.testM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead ~/a2/CUSTOMERS/20595117.txt[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pecho $mediantail 20595117.txt.test [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctail[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pecho $medianhead ~/a2/CUSTOMERS/20595117.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmedian=`sort -n -k 2 ~/a2/CUSTOMERS/20595117.txt | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' ~/a2/CUSTOMERS/20595117.txt > ~/20595117.txt.testM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead 20595117.txt.test [K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kr[Krm ~a[K/a3/CUSTOMERS//txt[K[K[K[K*/[K.txt
+
+luong@f6linux12:~$ cd ~/a3/CUSTOMERS/
+
+luong@f6linux12:~/a3/CUSTOMERS$ ls | wc -;[Kl
+200
+luong@f6linux12:~/a3/CUSTOMERS$ ls[Ks
+20595117.BINARY.txt             49693975.BINARY.txt             51110953.BINARY.txt             52517734.BINARY.txt
+20595117.txt.BINARY.BINARY.txt  49693975.txt.BINARY.BINARY.txt  51110953.txt.BINARY.BINARY.txt  52517734.txt.BINARY.BINARY.txt
+.........
+49355567.txt.BINARY.BINARY.txt  51010391.txt.BINARY.BINARY.txt  52496677.txt.BINARY.BINARY.txt  53082946.txt.BINARY.BINARY.txt
+49447323.BINARY.txt             51065232.BINARY.txt             52500542.BINARY.txt             53084107.BINARY.txt
+49447323.txt.BINARY.BINARY.txt  51065232.txt.BINARY.BINARY.txt  52500542.txt.BINARY.BINARY.txt  53084107.txt.BINARY.BINARY.txt
+
+luong@f6linux12:~/a3/CUSTOMERS$ head 0[K20595117.BINARY.txt (same as test file --> correct) 
+5 0
+5 0
+5 1
+5 0
+5 0
+5 0
+5 0
+5 1
+4 1
+5 0
+luong@f6linux12:~/a3/CUSTOMERS$ head [K[K[K[K[Krm *.txt.BINARY.BINARY.txt
+
+luong@f6linux12:~/a3/CUSTOMERS$ ls
+20595117.BINARY.txt  46983871.BINARY.txt  50389232.BINARY.txt  51142763.BINARY.txt  52223435.BINARY.txt  52845727.BINARY.txt
+30559999.BINARY.txt  49042814.BINARY.txt  50592435.BINARY.txt  51145127.BINARY.txt  52254603.BINARY.txt  52894384.BINARY.txt
+.......
+45284807.BINARY.txt  50199793.BINARY.txt  51065232.BINARY.txt  52012289.BINARY.txt  52797744.BINARY.txt
+46134316.BINARY.txt  50378566.BINARY.txt  51110953.BINARY.txt  52173832.BINARY.txt  52830980.BINARY.txt
+
+luong@f6linux12:~/a3/CUSTOMERS$ cd ~
+luong@f6linux12:~$ head 20595117.txt.test 
+5 0
+5 0
+5 1
+5 0
+5 0
+5 0
+5 0
+5 1
+4 1
+5 0
+luong@f6linux12:~$ head 20595117.txt.test [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~[K[2Plsrm *.txt.BINARY.BINARY.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Phead 20595117.BINARY.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K | wc -lcd ~/a3/CUSTOMERS/for file in ~/a2/CUSTOMERS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; median=`sort -nk2 $file | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' $file > ~/a3/CUSTOMERS/$id.BINARY.txt; done^C
+
+
+4.--------------------------------------RECOMPUTE CORRELATION-----------------------------
+4.--------------------------------------RECOMPUTE CORRELATION-----------------------------
+luong@f6linux12:~$ cd datamash-1.3/
+luong@f6linux12:~/datamash-1.3$ for file in ~/a3/CUSTOMERS/*.txt; do do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$id $CORR" >> ~/a3/custcorrelation;M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cid="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./data[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cid="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datam[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cid="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datama[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+> done
+luong@f6linux12:~/datamash-1.3$ cd ~/a3/custcor[K[K[K[K[K[K[K[K[K[K[K
+luong@f6linux12:~$ cd a3
+luong@f6linux12:~/a3$ ls
+CUSTOMERS  PRODUCTS  custcorrelation
+
+luong@f6linux12:~/a3$ head custcorrelation 
+20595117.BINARY -0.068276608104036
+30559999.BINARY 0.1869559347977
+35004134.BINARY 0.039055896331817
+35985708.BINARY -0.046338783263331
+36642996.BINARY 0.041272344643126
+38491967.BINARY 0.18558912387034
+38672733.BINARY 0.12447104183776
+39134375.BINARY 0.1106465512408
+39569598.BINARY 0.037344792479491
+41012519.BINARY 0.24583640343974
+luong@f6linux12:~/a3$ head custcorrelation ls[Kcd a3[1P~for file in ~/a3/CUSTOMERS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$id $CORR" >> ~/a3/custcorrelation; done[1P[1P[1P[1P[1@p[1@r[1@o[1@dM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppea[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppear[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppears[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearso[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson [1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1:[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CPS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1[1@:M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CRS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson [1@1M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearso[1@nM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CUS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppears[1@oM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppear[1@sM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CTS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppea[1@rM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+luong@f6linux12:~/a3/PRODUCTS$ ls
+0060193395.BINARY.txt  0312278586.BINARY.txt  0393317552.BINARY.txt  0446672211.BINARY.txt  0679781587.BINARY.txt
+0060392452.BINARY.txt  0312857691.BINARY.txt  0399142789.BINARY.txt  0446677450.BINARY.txt  0684801523.BINARY.txt
+......
+0310205719.BINARY.txt  038550120X.BINARY.txt  0446532231.BINARY.txt  0679444815.BINARY.txt  1576734587.BINARY.txt
+0312195516.BINARY.txt  0385504209.BINARY.txt  0446608955.BINARY.txt  0679735771.BINARY.txt  1594480001.BINARY.txt
+
+luong@f6linux12:~/a3/PRODUCTS$ cd ~/[Kda[K[K/dad[Ktamash-1.3/
+[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W [1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W p[C[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CPS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W [C[1@pM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CRS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[COS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -[1@WM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash
+[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CUS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash [1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CCS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash[C[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CTS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamas[1@hM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datama[1@sM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamas[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+luong@f6linux12:~/datamash-1.3$ for file in ~/a3/PRODUCTS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$id $CORR" >> ~/a3/prodcorrelation; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/datamash-1.3/[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead 0060392452.BINARY.txt ls[Kcd PRODUCTS/rm prodcorrelation [2@head cust[C[C[C[C[C[C[C[C[C[C[C[Cprod[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ~/a3/
+
+luong@f6linux12:~/a3$ head prodcorrelation 
+0060193395.BINARY -0.049364126504632
+0060392452.BINARY -0.3457614578493
+0060514558.BINARY -0.22376183785777
+0060582510.BINARY 0.018350241170795
+0060761288.BINARY -0.29127416136515
+0060763957.BINARY 0.018657966587004
+0060875410.BINARY 0.48305516615072 ----> product with top correlation (Code: sort -nk2 prodcorrelation)
+0060928336.BINARY -0.16166515716254
+0060930535.BINARY -0.26832376105617
+0060938455.BINARY -0.39479108458082
+luong@f6linux12:~/a3$ cd ~
+
+luong@f6linux12:~$ sort -nk2 ~/a3/custcorrelation 
+52793250.BINARY -0.09122001048553 --> customer with least correlation
+49042814.BINARY -0.089360370413926
+53071109.BINARY -0.08707909464951
+.......
+50378566.BINARY 0.19567758173052
+52500542.BINARY 0.21761305072659
+41012519.BINARY 0.24583640343974
+52496677.BINARY 0.25045741567577  ---> Customer with top correlation
+
+
+
+
+5-6. ---------------------------------PLOT CORRELATION-----------------------------
+5-6. ---------------------------------PLOT CORRELATION-----------------------------
+
+-------------------------------------WORK ON TOP CUSTOMER-----------------------------------
+luong@f6linux12:~$ cp 52496677.txt ~a2[K[K/a2/
+luong@f6linux12:~$ cd a2
+luong@f6linux12:~/a2$ ls
+52496677.txt  PRODUCTS       custcorrelation            helpfulnessMEAN.txt   helpfulnessMEAN1SORTED.txt
+CUSTOMERS     a2.txt.clean2  custcorrelationSORTED.txt  helpfulnessMEAN1.txt  star_ratingMEAN1.txt
+luong@f6linux12:~/a2$ awk ''{'}'p}'r}'i}'n}'t}' }'N}'R}',}' }'$}'1}'[C[C [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~[K[K[K[K'[Kawk ''{'}'p}'r}'i}'n}'t}' }'N}'R}',}' }'$}'1}'[C[C 52496677.txt > 6[K52496677.txt [K.ratings
+luong@f6linux12:~/a2$ head [K[K[K[K[Kawk '{print NR, $1}' 52496677.txt > 52496677.txt.ratings[C[C[C[C[C[1Ps[1Ps[1Ps[1Ps[1Ps[1Pshseslsps[C[C[C[C[1P[1@2
+luong@f6linux12:~/a2$ head 52496677.txt.ratings 
+1 5
+2 5
+3 4
+4 5
+5 4
+6 5
+7 5
+8 5
+9 5
+10 5
+luong@f6linux12:~/a2$ head 52496677.txt.ratings [1P [1P [1P [1P [1P [1P [1P h e l p s 
+1 1
+2 1
+3 0
+4 1
+5 1
+6 1
+7 1
+8 1
+9 1
+10 1
+luong@f6linux12:~/a2$ sort 52496677.txt >52496677.txt.sorted[C[C 52496677.txt.sorted
+
+luong@f6linux12:~/a2$ awk '{print NR, $2}' 52496677.txt.sorted > 52496677.txt.help[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pgit add 52496677.txt.ratings 52496677.txt.help [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Prm 52496677.txt.ratings[C[2Phelp[C[Cls[Kgit pushcommit -m "seperate cols for top customer"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd 52496677.txt.ratings 52496677.txt.helps [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '{print NR, $2}' 52496677.txt.sorted > 52496677.txt.helps[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P1}' 52496677.txt.sorted > 52496677.txt.ra[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Psort 52496677.txt > 52496677.txt.sorted[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '{print NR, $1}' 52496677.txt.sorted > 52496677.txt.rating
+
+luong@f6linux12:~/a2$ awk '{print NR, $1}' 52496677.txt.sorted > 52496677.txt.rating[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P2}' 52496677.txt.sorted > 52496677.txt.help[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pgit add 52496677.txt.ratings 52496677.txt.help [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Prm 52496677.txt.ratings[C[2Phelp[C[C[2@rating[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23@git add 52496677.txt.ratings 52496677.txt.help[C[1P
+
+
+----------------------------------------PUSH DATA FILES TO GITHUB TO GET RAW DATA FILES IN LOCAL--------------------------------------------------
+luong@f6linux12:~$ mid[K[Kkdir taolao
+luong@f6linux12:~$ mkdir taolao[8Pcd ~git init[5Plllgit push --set-upstream origin main[Kcommit -m "please"add 52496677.txt.*[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd testp ~/a2/52496677.txt.rating ~/test/52496677.txt.rating[1P/52496677.txt.rating[1P/52496677.txt.rating[1P/52496677.txt.rating[1P/52496677.txt.ratingt/52496677.txt.ratinga/52496677.txt.ratingo/52496677.txt.ratingl/52496677.txt.ratinga/52496677.txt.ratingo/52496677.txt.rating
+luong@f6linux12:~$ cp ~/a2/52496677.txt.rating ~/taolao/52496677.txt.rating[K[K[K[K[K[Khelp[1P ~/taolao/52496677.txt.help[1P ~/taolao/52496677.txt.help[1P ~/taolao/52496677.txt.help[1P ~/taolao/52496677.txt.help[1P ~/taolao/52496677.txt.help[1P ~/taolao/52496677.txt.helpj ~/taolao/52496677.txt.help[1P ~/taolao/52496677.txt.helph ~/taolao/52496677.txt.helpe ~/taolao/52496677.txt.helpl ~/taolao/52496677.txt.helpp ~/taolao/52496677.txt.help
+luong@f6linux12:~$ cd taolao/
+luong@f6linux12:~/taolao$ ls
+52496677.txt.help  52496677.txt.rating
+luong@f6linux12:~/taolao$ gitini[K[K[K init
+Initialized empty Git repository in /home/luong/taolao/.git/
+luong@f6linux12:~/taolao$ git add.[K .
+luong@f6linux12:~/taolao$ git add .[1P.initls[Kcd taolao/p ~/a2/52496677.txt.help ~/taolao/52496677.txt.helprating ~/taolao/52496677.txt.rating[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir taolao[K[8Pcd ~git init[5Plllgit push --set-upstream origin main[Kcommit -m "please"push[Kcommit -m "please"
+[master (root-commit) f83ce67] please
+ 2 files changed, 1470 insertions(+)
+ create mode 100644 52496677.txt.help
+ create mode 100644 52496677.txt.rating
+luong@f6linux12:~/taolao$ git branch -M main
+luong@f6linux12:~/taolao$ git remote add origin https://github.com/nhungL/taolao.git
+luong@f6linux12:~/taolao$ git push -u origin main
+Username for 'https://github.com': nhungL
+Password for 'https://nhungL@github.com': 
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)Counting objects:  50% (2/4)Counting objects:  75% (3/4)Counting objects: 100% (4/4)Counting objects: 100% (4/4), done.
+Delta compression using up to 80 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 2.90 KiB | 2.90 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/nhungL/taolao.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+luong@f6linux12:~$ cd a3
+luong@f6linux12:~/a3$ ls
+CUSTOMERS  PRODUCTS  custcorrelation  prodcorrelation  topcust.png
+luong@f6linux12:~/a3$ lscd a3scp Users\nhung\OneDrive\Desktop\topcust.png luong@f6linux12:/home/luong/a3/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@C:\[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Capt install putty-tools[Kpscp C:\Users\nhung\Desktop\topcust.png luong@f6linux12:/home/luong/a3/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csftp luong@f6linux12[Khistory | grep "User
+Script started on 2021-10-21 06:18:46+00:00 [TERM="screen" TTY="/dev/pts/1" COLUMNS="80" LINES="23"]
+
+luong@f6linux12:~/a3$ ls
+CUSTOMERS  PRODUCTS  custcorrelation  prodcorrelation  topcust.png
+
+
+--------------------------------WORK ON TOP PRODUCT------------------------------------
+luong@f6linux12:~$ sort 0060392452.txt[C[C[C.BINARY.txt [K > 0060392452.txt.sorted
+luong@f6linux12:~$ awk ''{'}'p}'r}'i}'n}'t}' }'N}'R}',}' }'$}'1}'[C[C 0060392452.txt.sorted > 006[K[K[K
+bash: syntax error near unexpected token `newline'
+luong@f6linux12:~$ awk '{print NR, $1}' 0060392452.txt.sorted > 0060392452.txt.r ating
+luong@f6linux12:~$ [Kluong@f6linux12:~$ awk '{print NR, $1}' 0060392452.txt.sorted > 0060392452.txt.rating[K[K[K[K[K[Khelp[1P[1@2
+luong@f6linux12:~$ head 0060392452.txt.BINARY.txt 
+1 1
+2 1
+5 1
+4 1
+4 0
+4 0
+1 1
+5 0
+1 1
+1 1
+luong@f6linux12:~$ head 0060392452.txt.BINARY.txt [K[K[K[K[K[K[K[K[K[K[Krating 
+1 1
+2 1
+3 1
+4 1
+5 1
+6 1
+7 1
+8 1
+9 1
+10 1
+luong@f6linux12:~$ head 0060392452.txt.rating [K[K[K[K[K[K[Khelp
+1 0
+2 0
+3 0
+4 0
+5 0
+6 0
+7 0
+8 0
+9 0
+10 0
+luong@f6linux12:~$ cp 0060392452.txt.rating ~/taolao/
+luong@f6linux12:~$ cp 0060392452.txt.rating ~/taolao/[1P ~/taolao/[1P ~/taolao/[1P ~/taolao/[1P ~/taolao/[1P ~/taolao/[1P ~/taolao/h ~/taolao/e ~/taolao/l ~/taolao/p ~/taolao/
+luong@f6linux12:~$ cd taolao/
+luong@f6linux12:~/taolao$ git add 0060392452.txt.rating 0060392452.txt.help 
+luong@f6linux12:~/taolao$ git commit -m "tup [K[K[Kopprod"
+[main b5a6756] topprod
+ 2 files changed, 1958 insertions(+)
+ create mode 100644 0060392452.txt.help
+ create mode 100644 0060392452.txt.rating
+luong@f6linux12:~/taolao$ git push
+Username for 'https://github.com': nhungL
+Password for 'https://nhungL@github.com': 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 80 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 3.89 KiB | 3.89 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/nhungL/taolao.git
+   f83ce67..b5a6756  main -> main
+
+luong@f6linux12:~$ cd ~/a3/
+luong@f6linux12:~/a3$ ls
+CUSTOMERS  PRODUCTS  custcorrelation  prodcorrelation  topcust.png  topprod.png
+
+
+
+7.----------------------------EXPLAIN---------------------------------------------------
+7.----------------------------EXPLAIN---------------------------------------------------
+I think the correlation is more meaningful now because the helpfulness scores are based on the mean of all scores.
+- That is the old correlation does not show much of relationship between ratings and helpfulness (kind of messy because we have many values of helpfulness).    
+- The new correlation on the other hand got helpfulness values rescaled to 0 or 1, whihc helps a lot to minimize redundancy of the data.
+
+
+Script done on 2021-10-21 08:10:13+00:00 [COMMAND_EXIT_CODE="0"]
+
+Script started on 2021-10-22 03:13:02+00:00 [TERM="screen" TTY="/dev/pts/2" COLUMNS="174" LINES="43"]
+
+
+
+8.----------------------GET HELPFULNESS SSCORES AND REVIEW BODY------------------------------------------
+8.----------------------GET HELPFULNESS SSCORES AND REVIEW BODY------------------------------------------
+luong@f6linux12:~/a3$ awk -F'\t' ''"'[1P'[K[C'{'}'p}'r}'i}'n}'t}' }'$}'1}'[1P}'9}',}' }'$}'1}'4}'[C[C 0525947647.txt>[K > 0525947647.txt.a3
+
+luong@f6linux12:~/a3$ head 00[K525947647.txt-0525947647.txtn0525947647.txt 0525947647.txt10525947647.txt 0525947647.txt
+US	37958240	R20QOJEVESAYJB	0525947647	857217799	Lies and the Lying Liars Who Tell Them	Books	5	6	16	N	N	Great buy	His insights on the lies of Ann Coulter, Sean Hannity, and Bill O'Reilly is the best part. His arguments are clear, well-written, and funny. He puts all others of his ilk to shame (including liberals and conservatives). This is a must read for every American. At times, his jokes can be hard to distinguish from what he's trying to pass off as truth, and that is the only negative aspect of the book. For the most part, if you have any kind of sarcasm detector, you can catch when he's joking. High recommended.	2005-10-14
+
+luong@f6linux12:~/a3$ head -n 1 0525947647.txt.a3 
+6 His insights on the lies of Ann Coulter, Sean Hannity, and Bill O'Reilly is the best part. His arguments are clear, well-written, and funny. He puts all others of his ilk to shame (including liberals and conservatives). This is a must read for every American. At times, his jokes can be hard to distinguish from what he's trying to pass off as truth, and that is the only negative aspect of the book. For the most part, if you have any kind of sarcasm detector, you can catch when he's joking. High recommended.
+
+
+
+9.---------------------CLEAN DATA----------------------------------------------------
+9.---------------------CLEAN DATA----------------------------------------------------
+
+------------------------REMOVE HTML TAGS-------------------------------------------------------------- 
+luong@f6linux12:~/a3$ sed -n 's/<[^>]*>//g' 0525947647.txt.a3 | head -n 3 0525947647.txt.a3 
+6 His insights on the lies of Ann Coulter, Sean Hannity, and Bill O'Reilly is the best part. His arguments are clear, well-written, and funny. He puts all others of his ilk to shame (including liberals and conservatives). This is a must read for every American. At times, his jokes can be hard to distinguish from what he's trying to pass off as truth, and that is the only negative aspect of the book. For the most part, if you have any kind of sarcasm detector, you can catch when he's joking. High recommended.
+15 Yet another stupid book filled with leftist ideas and propaganda.   Get a fresh perspective already! Franken's ideas and viewpoints are nothing but the same stuff he's been whining about for years.
+15 Frankly, I was wary of the title. I read the book expecting another predictable Michael Moore-like diatribe, and... needless to say, I was very pleasantly surprised. From the sheer quality of journalism in the book, to the frequent admissions of error and fallibility, to the poignant and honest treatment of oftentimes liberal punching-bag Bob Jones University, I got the sense that this book was written by someone who was genuinely interested in the truth, and not simply out to make a point. Franken also says much about the state of the media in general that is of extreme importance if the American democracy is to remain healthy. <br /> <br />I, as some reviewers before me, failed to get much from the more theatrical elements of the book (such as the Vietnam story - although the mental image of some of the protagonists grunting, knee-dep in mud, held a certain amount of satisfaction); also, the constant name-calling and profanity, although understandable in light of the revelations, made Franken a too-easy target for accusations of hypocrisy (a Kurt Vonnegut quote from \\"Hocus Pocus\\" comes to mind - that profanity makes it all too easy for one's opponents to ignore one's message). <br /> <br />Overall, though, this was a very well-researched and well-written book; instead of preaching to the choir, Franken has produced an argument that applies even to people who don't share his convictions. <br /> <br />P.S. See the piece by \\"Intilleviasileanis\\" a couple of entries below, on how NOT to review a book.
+
+luong@f6linux12:~/a3$ sed -n 's/<[^>]*>//g' 0525947647.txt.a3 | head -n 3 0525947647.txt.a3 [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C > 0525947647.txt.a3.1[K[K1[Kno[K[K.nohtml
+luong@f6linux12:~/a3$ 05[K[Khead -n 3 0525947647.txt.a3.nohtml 
+luong@f6linux12:~/a3$ head -n 3 0525947647.txt.a3.nohtml [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -n 's/<[^>]*>//g' 0525947647.txt.a3 > 0525947647.txt.a3.nohtml| head -n 3 0525947647.txt.a3 [K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Phead -n 1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+6 His insights on the lies of Ann Coulter, Sean Hannity, and Bill O'Reilly is the best part. His arguments are clear, well-written, and funny. He puts all others of his ilk to shame (including liberals and conservatives). This is a must read for every American. At times, his jokes can be hard to distinguish from what he's trying to pass off as truth, and that is the only negative aspect of the book. For the most part, if you have any kind of sarcasm detector, you can catch when he's joking. High recommended.
+luong@f6linux12:~/a3$ head -n 1 0525947647.txt.a3 [7@3 0525947647.txt.a3.nohtml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -n 's/<[^>]*>//g' 0525947647.txt.a3 > 0525947647.txt.a3.nohtml| head -n 3 0525947647.txt.a3 [4P> 0525947647.txt.a3.nohtml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Phead -n 3 0525947647.txt.a3.nohtml [7P1 0525947647.txt.a3[C[7@3 0525947647.txt.a3.nohtml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -n 's/<[^>]*>//g' 0525947647.txt.a3 > 0525947647.txt.a3.nohtml[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@p
+
+
+luong@f6linux12:~/a3$ sed 's/<[^>]*>//g p' 0525947647.txt.a3 > 0525947647.txt.a3.nohtml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[37Phead -n 1 0525947647.txt.a3 [7@3 0525947647.txt.a3.nohtml[C
+6 His insights on the lies of Ann Coulter, Sean Hannity, and Bill O'Reilly is the best part. His arguments are clear, well-written, and funny. He puts all others of his ilk to shame (including liberals and conservatives). This is a must read for every American. At times, his jokes can be hard to distinguish from what he's trying to pass off as truth, and that is the only negative aspect of the book. For the most part, if you have any kind of sarcasm detector, you can catch when he's joking. High recommended.
+15 Yet another stupid book filled with leftist ideas and propaganda.   Get a fresh perspective already! Franken's ideas and viewpoints are nothing but the same stuff he's been whining about for years.
+15 Frankly, I was wary of the title. I read the book expecting another predictable Michael Moore-like diatribe, and... needless to say, I was very pleasantly surprised. From the sheer quality of journalism in the book, to the frequent admissions of error and fallibility, to the poignant and honest treatment of oftentimes liberal punching-bag Bob Jones University, I got the sense that this book was written by someone who was genuinely interested in the truth, and not simply out to make a point. Franken also says much about the state of the media in general that is of extreme importance if the American democracy is to remain healthy.  I, as some reviewers before me, failed to get much from the more theatrical elements of the book (such as the Vietnam story - although the mental image of some of the protagonists grunting, knee-dep in mud, held a certain amount of satisfaction); also, the constant name-calling and profanity, although understandable in light of the revelations, made Franken a too-easy target for accusations of hypocrisy (a Kurt Vonnegut quote from \\"Hocus Pocus\\" comes to mind - that profanity makes it all too easy for one's opponents to ignore one's message).  Overall, though, this was a very well-researched and well-written book; instead of preaching to the choir, Franken has produced an argument that applies even to people who don't share his convictions.  P.S. See the piece by \\"Intilleviasileanis\\" a couple of entries below, on how NOT to review a book.
+
+---------------------------------REMOVE STOP WORDS-------------------------------------------------------------
+luong@f6linux12:~/a3$ sed 's/\(\<and\>\|\<or\>\|\<if\>\|\<in\>\|\<it\>\)//g'sed 's/\(\<and\>\|\<or\>\|\<if\>\|\<in\>\|\<it\>\)//g'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K' 053[K25947647.txt.a3.nohtml [K.[K > [K 0525947647.txt.a3.nohtml.st[K[Knostopwords
+luong@f6linux12:~/a3$ sed 's/\(\<and\>\|\<or\>\|\<if\>\|\<in\>\|\<it\>\)//g' 0525947647.txt.a3.nohtml > 0525947647.txt.a3.nohtml.nostopwords[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead -n 3 0525947647.txt.a3.nohtml [K[K.nostopwords 
+6 His insights on the lies of Ann Coulter, Sean Hannity,  Bill O'Reilly is the best part. His arguments are clear, well-written,  funny. He puts all others of his ilk to shame (including liberals  conservatives). This is a must read for every American. At times, his jokes can be hard to distinguish from what he's trying to pass off as truth,  that is the only negative aspect of the book. For the most part,  you have any kind of sarcasm detector, you can catch when he's joking. High recommended.
+15 Yet another stupid book filled with leftist ideas  propaganda.   Get a fresh perspective already! Franken's ideas  viewpoints are nothing but the same stuff he's been whining about for years.
+15 Frankly, I was wary of the title. I read the book expecting another predictable Michael Moore-like diatribe, ... needless to say, I was very pleasantly surprised. From the sheer quality of journalism  the book, to the frequent admissions of error  fallibility, to the poignant  honest treatment of oftentimes liberal punching-bag Bob Jones University, I got the sense that this book was written by someone who was genuinely interested  the truth,  not simply out to make a point. Franken also says much about the state of the media  general that is of extreme importance  the American democracy is to remain healthy.  I, as some reviewers before me, failed to get much from the more theatrical elements of the book (such as the Vietnam story - although the mental image of some of the protagonists grunting, knee-dep  mud, held a certain amount of satisfaction); also, the constant name-calling  profanity, although understandable  light of the revelations, made Franken a too-easy target for accusations of hypocrisy (a Kurt Vonnegut quote from \\"Hocus Pocus\\" comes to mind - that profanity makes  all too easy for one's opponents to ignore one's message).  Overall, though, this was a very well-researched  well-written book; instead of preaching to the choir, Franken has produced an argument that applies even to people who don't share his convictions.  P.S. See the piece by \\"Intilleviasileanis\\" a couple of entries below, on how NOT to review a book.
+luong@f6linux12:~/a3$ 
+luong@f6linux12:~/a3$ 
+
+-----------------------------REMOVE ALL 1-2CHAR WORDS----------------------------------------------------------
+luong@f6linux12:~/a3$ sed 's/\b[A-Za-z]\{1,2\}\b//g' 0525947647.txt.a3.nohtml.nostopwords > 0525947647.txt.a3.nohtml.nostopwords [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclean
+luong@f6linux12:~/a3$ sed 's/\b[A-Za-z]\{1,2\}\b//g' 0525947647.txt.a3.nohtml.nostopwords > 0525947647.txt.a3.clean[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[46Phead -n 3 0525947647.txt.a3.nohtml.nostopwords [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kclean 
+6 His insights  the lies  Ann Coulter, Sean Hannity,  Bill 'Reilly  the best part. His arguments are clear, well-written,  funny.  puts all others  his ilk  shame (including liberals  conservatives). This   must read for every American.  times, his jokes can  hard  distinguish from what ' trying  pass off  truth,  that  the only negative aspect  the book. For the most part,  you have any kind  sarcasm detector, you can catch when ' joking. High recommended.
+15 Yet another stupid book filled with leftist ideas  propaganda.   Get  fresh perspective already! Franken' ideas  viewpoints are nothing but the same stuff ' been whining about for years.
+15 Frankly,  was wary  the title.  read the book expecting another predictable Michael Moore-like diatribe, ... needless  say,  was very pleasantly surprised. From the sheer quality  journalism  the book,  the frequent admissions  error  fallibility,  the poignant  honest treatment  oftentimes liberal punching-bag Bob Jones University,  got the sense that this book was written  someone who was genuinely interested  the truth,  not simply out  make  point. Franken also says much about the state  the media  general that   extreme importance  the American democracy   remain healthy.  ,  some reviewers before , failed  get much from the more theatrical elements  the book (such  the Vietnam story - although the mental image  some  the protagonists grunting, knee-dep  mud, held  certain amount  satisfaction); also, the constant name-calling  profanity, although understandable  light  the revelations, made Franken  too-easy target for accusations  hypocrisy ( Kurt Vonnegut quote from \\"Hocus Pocus\\" comes  mind - that profanity makes  all too easy for one' opponents  ignore one' message).  Overall, though, this was  very well-researched  well-written book; instead  preaching  the choir, Franken has produced  argument that applies even  people who don' share his convictions.  .. See the piece  \\"Intilleviasileanis\\"  couple  entries below,  how NOT  review  book.
+
+
+
+
+
+10.----------------------------------------------------------------------------
+10.----------------------------------------------------------------------------
+
+------------------------------SORT BY HELPFULNESS SCORE-----------------------------------------
+luong@f6linux12:~/a3$ sort -nk1 0525947647.txt.a3.clean >  0525947647.txt.a3.clean.sorted[1P0525947647.txt.a3.clean.sorted
+luong@f6linux12:~/a3$ sort -nk1 0525947647.txt.a3.clean > 0525947647.txt.a3.clean.sorted[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Phead -n 3 0525947647.txt.a3.clean [K.sorted 
+0   lying liar telling the truth?  This  other apparent paradoxes are untangled   Franken, who can distinguish  Cretan liar from  mere cretin,   demonstrates  this book,  which  proves that the Republican Right belongs  the latter category. For people who are tired  the bad writing  louche attitude toward the truth (.., lying)  the Rileys, Coulters  ., Franken' book  welcome.  For the lying liars (.., cretins)  their fans, there' always Fox .   quote the hand-written post- that someone placed  the table  the East Hampton bookstore  which this book had been stacked -- before  sold out -- \\" Franken -- God bless him!\\"
+0  Franken has  extremely funny style that appears   effortless.  also has become serious enough  try ( doesn' always succeed, but his errors are mostly harmless)  document well. This book does  great job illustrating how lies are formed  perpetuated  the media   conservative pundits. The book  focused  sensical. The only drawback  that Franken lives  the world   comedian,  feels comfortable saying something false but funny,  hoping the reader will see    absurd that  must   joke. Unfortunately the line between true  false-but-funny  not always clear, especially these days.  also listened  the audio book, read  Franken, which was even better.
+0  Franken takes what the right wing gives him,  they' been   generous mood...for what seems like  long time.  all   should thank those responsible for such  entertaining book. . 'Reilly, . Limbaugh, etc., etc.,...Thank you,  please, keep  giving.
+
+----------------------------GET HELPFULNESS=0 AND SORT TO GET TOP 10-----------------------------
+luong@f6linux12:~/a3$ awk '($1==0){print $2}' 0525947647.txt.a3.clean.sorted > 0525947647.txt.a3.help0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptr " " "\n" < 0525947647.txt.a3.help0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pwc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+28 0525947647.txt.a3.help0
+luong@f6linux12:~/a3$ wc -l 0525947647.txt.a3.help0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[51@awk '($1==0){print $2}' 0525947647.txt.a3.clean.sorted >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Ptr " " "\n" < 0525947647.txt.a3.help0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K | so[K[Kuniq -c | sort -r[Kn[Kr | top -n [K[K[K[K[K[K[Khead -n 10
+      3 was
+      2 this
+      2 have/have
+      2 checked
+      2 With
+      2 Full
+      2 Franken
+      2 Fox
+      1 you
+      1 the
+
+----------------------------GET HELPFULNESS=1 AND SORT TO GET TOP 10-----------------------------
+luong@f6linux12:~/a3$ awk '($1==1){print $2}' 0525947647.txt.a3.clean.sorted > 0525947647.txt.a3.help1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Ptr " " "\n" < 0525947647.txt.a3.help0 | uniq -c | sort -r | head -n 10[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[41Pwc -l 0525947647.txt.a3.help0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[51@awk '($1==0){print $2}' 0525947647.txt.a3.clean.sorted >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[51Pwc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K1
+157 0525947647.txt.a3.help1
+luong@f6linux12:~/a3$ wc -l 0525947647.txt.a3.help1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[51@awk '($1==1){print $2}' 0525947647.txt.a3.clean.sorted >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Ptr " " "\n" < 0525947647.txt.a3.help0 | uniq -c | sort -r | head -n 10[C[1P[1@1
+     13 This
+     13 The
+      9 '
+      4 need
+      4 Don'
+      4 Can
+      3 you
+      3 haven'
+      3 finally
+      3 Unlike
+luong@f6linux12:~/a3$ exit[K[K[K[Kexit
+
+Script done on 2021-10-22 03:31:58+00:00 [COMMAND_EXIT_CODE="0"]

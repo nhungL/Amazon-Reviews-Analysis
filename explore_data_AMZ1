@@ -1,0 +1,313 @@
+Script started on 2021-10-01 23:00:37+00:00 [TERM="screen" TTY="/dev/pts/7" COLUMNS="80" LINES="23"]
+luong@f6linux12:~$ mkdir a2
+luong@f6linux12:~$ c [Kd ws3/
+luong@f6linux12:~/ws3$ ls
+cmds.log            customerids1000.txt  productids100.txt
+customerids.txt     info100.txt          ws3.txt
+customerids100.txt  productids.txt       ws31.txt
+
+1.-----------------------------------------------------------------
+luong@f6linux12:~/ws3$ cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -lM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.amazon_reviews_us_Books_v1_02.tsv | sort | uniq [1@|M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.amazon_reviews_us_Books_v1_02.tsv | sort | uniq[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/amazon_reviews_us_Books_v1_02.tsv | sort | uni[1@qM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+1502381  ---> UNIQUE CUSTOMER IDS
+
+luong@f6linux12:~/ws3$ cut -f 4 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -lM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C4 ../amazon_reviews_us_Books_v1_02.tsv | sort | uni[1@qM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+779734  ---> UNIQUE PRODUCT IDS
+
+luong@f6linux12:~/ws3$ cut -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -lM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uni[1@qM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+713712  ---> UNIQUE PRODUCT TITLES 
+(less than unique of product ids - because some products have same name)
+
+(END)[K[K [KESCESC[KOO[KBB[K[K(END)[K[K [KESCESC[Kii[K(END)[K[K(END)[K[K(END)[K[K [K::[KESCESC[K(END)[K[K [K::[Kww[K(END)[K[K[?1l>[?1049lluong@f6linux12:~/ws3$ vi ~/a[K[K[K[K[K[Kless ~/a2.txtws5.txt[1Pa2.txtws5.txtcut -f 7 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -lM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7 ../amazon_reviews_us_Books_v1_02.tsv | sort | uni[1@qM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+2  --> only 2 unique categories
+luong@f6linux12:~/ws3$ cut -f 7 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -l[C[C[C[K[K[K[K[K[K[K[K
+Books  --> only 1 product category in this dataset
+product_category
+
+
+
+2+3.---------------------------100 DIFFERENT FILES FOR EACH CUSTOMER AND PRODUCT---------------------------
+
+luong@f6linux12:~$ ls
+a1      amazon_reviews_us_Books_v1_02.tsv     datamash-1.3.tar.gz  ws2  ws5
+a2      amazon_reviews_us_Books_v1_02.tsv.gz  demo                 ws3  ws5.txt
+a2.txt  datamash-1.3                          worksheet1           ws4
+luong@f6linux12:~$ cd a2
+luong@f6linux12:~/a2$ ls
+luong@f6linux12:~/a2$ cd ~/ws3
+luong@f6linux12:~/ws3$ mkdir ~/a2/CUSTOMERS
+luong@f6linux12:~/ws3$ cd [K[K[Kls
+cmds.log            customerids1000.txt  productids100.txt
+customerids.txt     info100.txt          ws3.txt
+customerids100.txt  productids.txt       ws31.txt
+luong@f6linux12:~/ws3$ cd customerids100.txt[C[C[1P customerids100.txt[1P customerids100.txtv customerids100.txti customerids100.txt[1P customerids100.txt[1P customerids100.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klsgrep "51747709" ../amazon_reviews_us_Books_v1_02.tsv [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `cat customerids100.txt`; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f 2,8,9 >> ~/a2/CUSTOMERS/$i.txt; echo "$i"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C8,9 >> ~/a2/CUSTOMERS/$i.txt; echo "$i"; don[1PeM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C8,9 >> ~/a2/CUSTOMERS/$i.txt; echo "$i"; done[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(print out cutsomer id done)
+50122160
+50732546
+52615377
+45041039
+50776149
+.....
+53052943
+52012289
+52697458
+42800127
+51142763
+luong@f6linux12:~/ws3$ for i in `cat customerids100.txt`; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 >> ~/a2/CUSTOMERS/$i.txt; echo "$i"; doneM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep "51747709" ../amazon_reviews_us_Books_v1_02.tsv [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `cat customerids100.txt`; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 >> ~/a2/CUSTOMERS/$i.txt; echo "$i";[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@2,[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkdir ~/a2/CUSTOMERS[K
+
+
+
+3.-----------------------
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[KPRODUCTS
+luong@f6linux12:~/ws3$ mkdir ~/a2/PRODUCTSfor i in `cat customerids100.txt`; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 >> ~/a2/CUSTOMERS/$i.txt; echo "$i"; done[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@P[1@R[1@O[1@D[1@U[1@C[1@T[1@SM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Boo[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Book[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_0[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.t[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.ts[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv [1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv |[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | [1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | c[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cu[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut [1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f [1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f 8[1PM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f [1@8M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -f[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut -[1@fM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut [1@-M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv | cut[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cctids; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv [5@| cutM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1; do egrep $i ../amazon_reviews_us_Books_v1_02.tsv[1@ M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0; do egrep $i ../amazon_reviews_us_Books_v1_02.ts[1@vM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0.txt; do egrep $i ../amazon_reviews_us_Books_v1_[5@02.tsM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C`; do egrep $i ../amazon_reviews_us_Books_v1[1@_M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C`productids100.txt`; do egrep $i ../amazon_reviews_us_Books_v[1@1M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccproductids100.txt`; do egrep $i ../amazon_reviews_us_Books_[1@vM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Caproductids100.txt`; do egrep $i ../amazon_reviews_us_Books[1@_M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctproductids100.txt`; do egrep $i ../amazon_reviews_us_Book[1@sM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C productids100.txt`; do egrep $i ../amazon_reviews_us_Boo[1@kM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+043935806X
+0439139597
+0525947647
+0895260174
+0385504209
+
+.....
+
+014028009X
+0060514558
+0393317552
+0345340426
+1576734587
+
+
+4+5+6.-----------------------ALIAS----------------------------------------
+4+5+6.-----------------------ALIAS----------------------------------------
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi[27;75H116,2[9CBot[26;2H[34h[?25h[?25l[27;65H~@k[26;2H[27;65H   [26;2H[34h[?25h[?25l[27;65H~@k[26;2H[27;65H   [26;2H[34h[?25h[?25l[27;65H~@k[26;2H[27;65H   [25;2H[27;77H5[25;2H[34h[?25h[?25l[27;65H~@k[25;2H[27;65H   [24;2H[27;77H4[24;2H[34h[?25h[?25l[27;65H~@k[24;2H[27;65H   [23;2H[27;77H3[23;2H[34h[?25h[?25l[27;65H~@k[23;2H[27;65H   [22;2H[27;77H2[22;2H[34h[?25h[?25l[27;65H~@k[22;2H[27;65H   [21;2H[27;77H1[21;2H[34h[?25h[?25l[27;65H~@k[21;2H[27;65H   [20;2H[27;77H0[20;2H[34h[?25h[?25l[27;65H~@k[20;2H[27;65H   [19;2H[27;76H09[19;2H[34h[?25h[?25l[27;65H~@k[19;2H[27;65H   [18;2H[27;77H8[18;2H[34h[?25h[?25l[27;65H~@k[18;2H[27;65H   [17;2H[27;77H7[17;2H[34h[?25h[?25l[27;65H~@k[17;2H[27;65H   [16;1H[27;77H6,0-1[16;1H[34h[?25h[?25l[27;65H~@k[16;1H[27;65H   [15;2H[27;77H5,2  [15;2H[34h[?25h[?25l[27;65H~@k[15;2H[27;65H   [14;2H[27;77H4[14;2H[34h[?25h[?25l[27;65H~@k[14;2H[27;65H   [13;2H[27;77H3[13;2H[34h[?25h[?25l[27;65H~@k[13;2H[27;65H   [12;1H[27;77H2,0-1[12;1H[34h[?25h[?25l[27;65H~@k[12;1H[27;65H   [11;2H[27;77H1,2  [11;2H[34h[?25h[?25l[27;65H~@k[11;2H[27;65H   [10;2H[27;77H0[10;2H[34h[?25h[?25l[27;65H~@k[10;2H[27;65H   [9;2H[27;75H99,2 [9;2H[34h[?25h[?25l[27;65H~@k[9;2H[27;65H   [8;2H[27;76H8[8;2H[34h[?25h[?25l[27;65H~@k[8;2H[27;65H   [7;1H[27;76H7,0-1[7;1H[34h[?25h[?25l[27;65H~@k[7;1H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;1Halias ll='ls -alF'[27;1H[K[27;75H96,2[10C98%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;1H# some more ls aliases[27;75H[K[27;75H95,2[10C97%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[27;75H[K[27;75H94,2[10C96%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;1H#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'[27;75H[K[27;75H93,2[10C95%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;1H# colored GCC warnings and errors[27;75H[K[27;75H92,2[10C94%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[27;75H[K[27;75H91,2[10C93%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;1Hfi[27;75H[K[27;75H90,2[10C92%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;5Halias egrep='egrep --color=auto'[27;75H[K[27;75H89,0-1[8C91%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;5Halias fgrep='fgrep --color=auto'[27;75H[K[27;75H88,2[10C90%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;2H[1;26r[1;1H[L[1;27r[1;5Halias grep='grep --color=auto'[27;75H[K[27;75H87,2[10C89%[6;2H[34h[?25h[?25l[27;65H~@k[6;2H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[27;75H[K[27;75H86,0-1[8C87%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [7;2H[27;76H7,2  [7;2H[34h[?25h[?25l[27;65H~@k[7;2H[27;65H   [8;2H[27;76H8[8;2H[34h[?25h[?25l[27;65H~@k[8;2H[27;65H   [9;1H[27;76H9,0-1[9;1H[34h[?25h[?25l[27;65H~@k[9;1H[27;65H   [10;2H[27;75H90,2  [10;2H[34h[?25h[?25l[27;65H~@k[10;2H[27;65H   [11;2H[27;76H1[11;2H[34h[?25h[?25l[27;65H~@k[11;2H[27;65H   [11;1H[27;78H1[11;1H[34h[?25h[?25l[27;65H^[[11;1H[27;65H  [11;1H[27;65H^[[11;1H[27;65H  [11;1H[34h[?25h[?25l[27;65Hi[11;1H[27;65H [11;1H[27;1H-- INSERT --[27;75H[K[27;75H91,1[10C87%[11;1H[34h[?25h[?25l[12;26r[12;1H[L[1;27r[11;1H[K[12;1Halias ll='ls -alF'[27;75H[K[27;75H92,1[10C86%[12;1H[34h[?25h[?25l[27;76H1[11;1H[34h[?25h[?25la[27;78H2[11;2H[34h[?25h[?25ll[27;78H3[11;3H[34h[?25h[?25li[27;78H4[11;4H[34h[?25h[?25la[27;78H5[11;5H[34h[?25h[?25lalias[27;78H6[11;6H[34h[?25h[?25l[27;78H7[11;7H[34h[?25h[?25lw[27;78H8[11;8H[34h[?25h[?25l[11;7H[K[27;78H7[11;7H[34h[?25h[?25ll[27;78H8[11;8H[34h[?25h[?25l ll[27;78H9[11;9H[34h[?25h[?25ll[27;78H10[11;10H[34h[?25h[?25l[27;79H1[11;11H[34h[?25h[?25l[27;79H0[11;10H[34h[?25h[?25l=[27;79H1[11;11H[34h[?25h[?25l'
+alias ll=[1Cls -alF
+alias la=[1Cls -A
+alias l=[1Cls -CF
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert=[1Cnotify-send --urgency=low -i "$([ $? = [1C ] && echo[10C|| echo[6C)" "$(([18;1Hhistory|tail -n1|sed -e [1C\'[25;1Hif [23C then
+    . ~/.bash_aliases[27;79H2[11;12H[34h[?25h[?25lls -latr[27;78H20[11;20H[34h[?25h[?25l'
+alias ll=[1Cls -alF
+alias la=[1Cls -A
+alias l=[1Cls -CF
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert=[1Cnotify-send --urgency=low -i "$([ $? = 0 ] && echo[10C|| echo error)" "$(([18;1Hhistory|tail -n1|sed -e [1C\'[25;1Hif [23C then
+    . ~/.bash_aliases[27;79H1[11;21H[34h[?25h[?25l[12;26r[12;1H[L[1;27r[27;75H[K[27;75H92,1[10C86%[12;1H[34h[?25h[?25la[27;78H2[12;2H[34h[?25h[?25ll[27;78H3[12;3H[34h[?25h[?25li[27;78H4[12;4H[34h[?25h[?25la[27;78H5[12;5H[34h[?25h[?25lalias[27;78H6[12;6H[34h[?25h[?25l[27;78H7[12;7H[34h[?25h[?25lw[27;78H8[12;8H[34h[?25h[?25lw=[27;78H9[12;9H[34h[?25h[?25l'
+alias ll=[1Cls -alF
+alias la=[1Cls -A
+alias l=[1Cls -CF
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert=[1Cnotify-send --urgency=low -i "$([ $? = [1C ] && echo[10C|| echo[6C)" "$(([19;1Hhistory|tail -n1|sed -e [1C\'[26;1Hif [23C then[27;78H10[12;10H[34h[?25h[?25ll[27;79H1[12;11H[34h[?25h[?25ls[27;79H2[12;12H[34h[?25h[?25l [27;79H3[12;13H[34h[?25h[?25l-[27;79H4[12;14H[34h[?25h[?25l-la | wc[27;78H22[12;22H[34h[?25h[?25l'
+alias ll=[1Cls -alF
+alias la=[1Cls -A
+alias l=[1Cls -CF
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert=[1Cnotify-send --urgency=low -i "$([ $? = 0 ] && echo[10C|| echo error)" "$(([19;1Hhistory|tail -n1|sed -e [1C\'[26;1Hif [23C then[27;79H3[12;23H[34h[?25h[?25l[27;79H2[12;22H[34h[?25h[?25l[27;79H1[12;21H[34h[?25h[?25l[27;79H0[12;20H[34h[?25h[?25l[27;78H19[12;19H[34h[?25h[?25l[27;79H8[12;18H[34h[?25h[?25l[27;79H7[12;17H[34h[?25h[?25l[27;79H6[12;16H[34h[?25h[?25l[27;79H5[12;15H[34h[?25h[?25lla | wc'[12;22H[K[27;79H4[12;14H[34h[?25h[27;1H[K[?25l[27;75H92,13[9C86%[12;13H[34h[?25h[?25l[27;65H:[12;13H[27;65H[K[27;1H:[34h[?25hwq[?25l"~/.bashrc" 118L, 3813C written
+[?1l>[34h[?25h[?1049lluong@f6linux12:~/ws3$ alias
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias lll='ls -latr'
+alias ls='ls --color=auto'
+alias w='ls -la |wc'
+luong@f6linux12:~/ws3$ sour[K[K[K[K./sour[K[K[K[K[K[K. ~/.bashrc
+luong@f6linux12:~/ws3$ alias
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias lll='ls -latr'
+alias ls='ls --color=auto'
+alias w='ls -la | wc'
+
+
+
+7.-----------------------------VERIFYING 100 FILES-------------------------------
+7.-----------------------------VERIFYING 100 FILES-------------------------------
+
+luong@f6linux12:~/ws3$ cd ~/a2/CUSTOMERS/
+luong@f6linux12:~/a2/CUSTOMERS$ w
+    103     920    5803
+luong@f6linux12:~/a2/CUSTOMERS$ cd [K[K[Kwcd ~/a2/CUSTOMERS/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/[1P/P/R/O/D/U/C/T/S/
+luong@f6linux12:~/a2/PRODUCTS$ w
+    103     920    6003
+luong@f6linux12:~/a2/PRODUCTS$ ls [K[K[Klll
+
+
+
+
+8.----------------------------CORRELATION-----------------------------------------------
+8.----------------------------CORRELATION-----------------------------------------------
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/50776149.txt[27;75H[K[27;75H39,1[11C6%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/50881246.txt[27;75H[K[27;75H40,1[11C6%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/50895620.txt[27;75H[K[27;75H41,1[11C7%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+..........................................
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53072811.txt[27;75H[K[27;75H193,1[9C62%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53082946.txt[27;75H[K[27;75H194,1[9C63%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53084107.txt[27;75H[K[27;75H195,1[9C63%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/20595117.txt -0.07801434074194[27;75H[K[27;75H196,1[9C63%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/30559999.txt 0.21345504736868[27;75H[K[27;75H197,1[9C64%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/35004134.txt 0.055309254263891[27;75H[K[27;75H198,1[9C64%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/35985708.txt -0.018475208724832[27;75H[K[27;75H199,1[9C64%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+......................................
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53071109.txt 0.031330315464942[27;75H[K[27;75H92,1[10C95%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53072811.txt 0.085940719734639[27;75H[K[27;75H93,1[10C97%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53082946.txt 0.098723957624567[27;75H[K[27;75H94,1[10C98%[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [21;1H[1;26r[26;1H
+[1;27r[26;1H/home/luong/a2/CUSTOMERS/53084107.txt 0.059862926995826[27;75H[K[27;75H95,1[10CBot[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [22;1H[27;76H6[22;1H[34h[?25h[?25l[27;65H~@k[22;1H[27;65H   [23;1H[27;76H7[23;1H[34h[?25h[?25l[27;65H~@k[23;1H[27;65H   [24;1H[27;76H8[24;1H[34h[?25h[?25l[27;65H~@k[24;1H[27;65H   [25;1H[27;76H9[25;1H[34h[?25h[?25l[27;65H~@k[25;1H[27;65H   [26;1H[27;75H100,1[26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [26;1H[34h[?25h[?25l[27;65H~@k[26;1H[27;65H   [25;1H[27;75H99,1 [25;1H[34h[?25h[?25l[27;65H~@k[25;1H[27;65H   [24;1H[27;76H8[24;1H[34h[?25h[?25l[27;65H~@k[24;1H[27;65H   [23;1H[27;76H7[23;1H[34h[?25h[?25l[27;65H~@k[23;1H[27;65H   [22;1H[27;76H6[22;1H[34h[?25h[?25l[27;65H~@k[22;1H[27;65H   [21;1H[27;76H5[21;1H[34h[?25h[?25l[27;65H~@k[21;1H[27;65H   [20;1H[27;76H4[20;1H[34h[?25h[?25l[27;65H~@k[20;1H[27;65H   [19;1H[27;76H3[19;1H[34h[?25h[?25l[27;65H~@k[19;1H[27;65H   [18;1H[27;76H2[18;1H[34h[?25h[?25l[27;65H~@k[18;1H[27;65H   [17;1H[27;76H1[17;1H[34h[?25h[?25l[27;65H~@k[17;1H[27;65H   [16;1H[27;76H0[16;1H[34h[?25h[?25l[27;65H~@k[16;1H[27;65H   [15;1H[27;75H89[15;1H[34h[?25h[?25l[27;65H~@k[15;1H[27;65H   [14;1H[27;76H8[14;1H[34h[?25h[?25l[27;65H~@k[14;1H[27;65H   [13;1H[27;76H7[13;1H[34h[?25h[?25l[27;65H~@k[13;1H[27;65H   [12;1H[27;76H6[12;1H[34h[?25h[?25l[27;65H~@k[12;1H[27;65H   [11;1H[27;76H5[11;1H[34h[?25h[?25l[27;65H~@k[11;1H[27;65H   [10;1H[27;76H4[10;1H[34h[?25h[?25l[27;65H~@k[10;1H[27;65H   [9;1H[27;76H3[9;1H[34h[?25h[?25l[27;65H~@k[9;1H[27;65H   [8;1H[27;76H2[8;1H[34h[?25h[?25l[27;65H~@k[8;1H[27;65H   [7;1H[27;76H1[7;1H[34h[?25h[?25l[27;65H~@k[7;1H[27;65H   [6;1H[27;76H0[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52496677.txt 0.18251371784434[27;75H[K[27;75H79,1[10C98%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52476938.txt 0.055596837865367[27;75H[K[27;75H78,1[10C97%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52447634.txt 0.062000110385039[27;75H[K[27;75H77,1[10C95%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52266433.txt 0.013724947082216[27;75H[K[27;75H76,1[10C94%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52254603.txt 0.073176446680375[27;75H[K[27;75H75,1[10C93%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52223435.txt -0.0026349289854177[27;75H[K[27;75H74,1[10C91%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52173832.txt 0.10237932118738[27;75H[K[27;75H73,1[10C90%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52012289.txt 0.18492316019033[27;75H[K[27;75H72,1[10C89%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/52008531.txt 0.017811475726488[27;75H[K[27;75H71,1[10C87%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51987970.txt 0.051486636075274[27;75H[K[27;75H70,1[10C86%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51934027.txt 0.13503774269188[27;75H[K[27;75H69,1[10C85%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51917998.txt 0.022448391180586[27;75H[K[27;75H68,1[10C83%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51915884.txt 0.14176373240007[27;75H[K[27;75H67,1[10C82%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51809405.txt 0.11875456413314[27;75H[K[27;75H66,1[10C81%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51379338.txt 0.12578151587695[27;75H[K[27;75H65,1[10C79%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51325095.txt 0.086940729395386[27;75H[K[27;75H64,1[10C78%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51247650.txt 0.060609415951821[27;75H[K[27;75H63,1[10C77%[6;1H[34h[?25h[?25l[27;65H~@k[6;1H[27;65H   [6;1H[1;26r[1;1H[L[1;27r[1;1H/home/luong/a2/CUSTOMERS/51243012.txt 0.06835179616414[27;75H[K[27;75H62,1[10C75%[6;1H[34h[?25h[?25l[27;65H:[6;1H[27;65H[K[27;1H:[34h[?25hwq[?25l"custcorrelation" 100L, 5551C written
+
+luong@f6linux12:~/a2$ sort -k 2 -n custcorrelation [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pvi custcorrelationhead custcorrelation ls[Kcd ~/a2/for file in ~/a2/CUSTOMERS/*.txt; do CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$file $CORR" >> ~/a2/custcorrelation; doneM[C[C[C[C[C./datamash  -W ppearson 1:2 <[2P $file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P$file $CORR[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/datamash-1.3/[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clll[K[2Pwcd ~/a2/PRODUCTS/w[Kcd ~/a2/CUSTOMERS/alias[K. ~/.bashrc[6Paliascd ~/a2/CUSTOMERS/w[Kcd ~/a2/PRODUCTS/w[Klllcd ~/datamash-1.3/for file in ~/a2/CUSTOMERS/*.txt; do CORR=./datamash  -W ppearson 1:2 < $file; echo $file $CORR >> ~/a2/custcorrelation; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@"$file $CORR"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[C[C[C[C[C[C`./datamash  -W ppearson 1:2 [2@< $file`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/a2/[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Khead custcorrelation [3Pvi custcorrelationsort -k 2 -n custcorrelation [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kvi custcorrelation 
+
+
+/home/luong/a2/CUSTOMERS/52697458.txt -0.14252275828471   -----> NEGATIVE CORRELATION
+/home/luong/a2/CUSTOMERS/20595117.txt -0.07801434074194
+/home/luong/a2/CUSTOMERS/52966385.txt -0.071306253746504
+/home/luong/a2/CUSTOMERS/35985708.txt -0.018475208724832
+/home/luong/a2/CUSTOMERS/50736950.txt -0.013727796992368
+/home/luong/a2/CUSTOMERS/50776149.txt -0.0061448727026488
+/home/luong/a2/CUSTOMERS/52223435.txt -0.0026349289854177   -----> LEAST CORRELATED HELPFULNESS SCORES AND REVIEW SCORES
+/home/luong/a2/CUSTOMERS/50895620.txt nan
+/home/luong/a2/CUSTOMERS/50941451.txt 0.0049250944457509
+/home/luong/a2/CUSTOMERS/52793250.txt 0.0049836076293453
+/home/luong/a2/CUSTOMERS/46983871.txt 0.0053203252670871
+
+...........................
+
+/home/luong/a2/CUSTOMERS/52012289.txt 0.18492316019033
+/home/luong/a2/CUSTOMERS/45041039.txt 0.18720273660608
+/home/luong/a2/CUSTOMERS/53047425.txt 0.19913465813733
+/home/luong/a2/CUSTOMERS/30559999.txt 0.21345504736868  -----> MOST POSITIVE CORRELATED HELPFULNESS SCORES AND REVIEW SCORES
+
+luong@f6linux12:~/a2$ sort -n -k 2 custcorrelation [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10@sort -k 2 -n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pvi custcorrelationhead custcorrelation [3Pvi custcorrelationsort -k 2 -n custcorrelation [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10@sort -n -k 2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kluong@f6linux12:~/a2$ [Kluong@f6linux12:~/a2$ [Kluong@f6linux12:~/a2$ sort -n -k 2 custcorrelation [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khead[K[K[K[Kvi custcorrelation [10@sort -k 2 -n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> custcorrelation [Kso[K[KSORTED.txt
+
+luong@f6linux12:~/datamash-1.3$ ./datamash  -W ppearson 1:2 < 50895620.txt[C~50895620.txt/50895620.txta50895620.txt250895620.txt/50895620.txtC50895620.txtU50895620.txtS50895620.txtT50895620.txtO50895620.txtM50895620.txtE50895620.txtR50895620.txtS50895620.txt/50895620.txt
+nan ----> THIS FILE GOT NAN CORRELATION
+
+
+luong@f6linux12:~/datamash-1.3$ ./datamash  -W ppearson 1:2 < ~/a2/CUSTOMERS/50895620.txt[15P50895620.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pcd ~/datamash-1.3/at CUSTOMERS/50895620.txtvi custcorrelationSORTED.txt [2@head[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -k 2 -n custcorrelation > custcorrelationSORTED.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kvi custcorrelation [10@sort -k 2 -n[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pvi custcorrelationhead custcorrelation ls[Kcd ~/a2/for file in ~/a2/CUSTOMERS/*.txt; do CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$file $CORR" >> ~/a2/custcorrelation; doneM[C[C[C[C[C./datamash  -W ppea[2Prson 1:2 < $file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~
+
+
+
+
+
+
+
+9.----------------MEAN OF HELPFULNESS---------------------------------------------------
+9.----------------MEAN OF HELPFULNESS---------------------------------------------------
+
+luong@f6linux12:~$ for file in ~/a2/CUSTOMERS/*.txt; do total=0; count=0; mean=0; for i in $( awk '{ print $2; }' $file );  do total=$(echo $total+$i | bc ); ((count++)); mean=`echo "scale=2; $total / $count" | bc`; done; echo "$file $mean" >> ~/a2/helpfulnessMEAN1.txt; doneMMM[34Pvi ~/a2/helpfulnessMEAN1.txt
+[K
+[K
+/home/luong/a2/CUSTOMERS/20595117.txt 7.12
+/home/luong/a2/CUSTOMERS/30559999.txt 8.86
+/home/luong/a2/CUSTOMERS/35985708.txt 3.23
+
+............................
+
+[1;32r[31;1H/home/luong/a2/CUSTOMERS/53071109.txt 12.84[32;65H[K[32;65H92,1[10C95%[26;1H[34h[?25h[?25l[32;55H~@k[26;1H[32;55H   [26;1H[1;31r[31;1H
+[1;32r[31;1H/home/luong/a2/CUSTOMERS/53084107.txt 15.27[32;65H[K[32;65H95,1[10CBot[26;1H[34h[?25h[?25l[32;55H~@k[26;1H[32;55H   [27;1H[32;66H6[27;1H[34h[?25h[?25l[32;55H~@k[27;1H[32;55H   [28;1H[32;66H7[28;1H[34h[?25h[?25l[32;55H~@k[28;1H[32;55H   [29;1H[32;66H8[29;1H[34h[?25h[?25l[32;55H~@k[29;1H[32;55H   [30;1H[32;66H9[30;1H[34h[?25h[?25l[32;55H~@k[30;1H[32;55H   [31;1H[32;65H100,1[31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H:[31;1H[32;55H[K[32;1H:[34h[?25hwq[?25l"a2/helpfulnessMEAN1.txt" 100L, 4362C written
+
+
+luong@f6linux12:~$ sort -n -k 2 ~/a2/helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pvi ~/a2/helpfulnessMEAN1.txt 
+luong@f6linux12:~/a2$ ls
+CUSTOMERS  custcorrelation            helpfulnessMEAN.txt
+PRODUCTS   custcorrelationSORTED.txt  helpfulnessMEAN1.txt
+
+luong@f6linux12:~/a2$ lscd a2vi ~/a2 /helpfulnessMEAN1SORTED.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -n -k 2 ~/a2/helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ChelpfulnessMEAN1.txt > helpfulnessMEAN1SORTE[1PD.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ChelpfulnessMEAN1.txt > helpfulnessMEAN1SORTED[1P.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ChelpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.[1PtxtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ChelpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.t[1PxtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[ChelpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.tx[1PtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+luong@f6linux12:~/a2$ vi helpfulnessMEAN1SORTED.txt 
+[?1049h[?1h=[1;32r[H[J[?25l[32;1H"helpfulnessMEAN1SORTED.txt" 100L, 4362C[1;1H/home/luong/a2/CUSTOMERS/49202417.txt 2.67
+/home/luong/a2/CUSTOMERS/42800127.txt 2.91
+/home/luong/a2/CUSTOMERS/53008075.txt 3.53
+/home/luong/a2/CUSTOMERS/45041039.txt 3.99
+
+..................................
+[1;32r[31;1H/home/luong/a2/CUSTOMERS/49786731.txt 38.16[32;65H[K[32;65H92,1[10C95%[26;1H[34h[?25h[?25l[32;55H~@k[26;1H[32;55H   [26;1H[1;31r[31;1H
+[1;32r[31;1H/home/luong/a2/CUSTOMERS/39134375.txt 57.23[32;65H[K[32;65H95,1[10CBot[26;1H[34h[?25h[?25l[32;55H~@k[26;1H[32;55H   [27;1H[32;66H6[27;1H[34h[?25h[?25l[32;55H~@k[27;1H[32;55H   [28;1H[32;66H7[28;1H[34h[?25h[?25l[32;55H~@k[28;1H[32;55H   [29;1H[32;66H8[29;1H[34h[?25h[?25l[32;55H~@k[29;1H[32;55H   [30;1H[32;66H9[30;1H[34h[?25h[?25l[32;55H~@k[30;1H[32;55H   [31;1H[32;65H100,1[31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H~@k[31;1H[32;55H   [31;1H[34h[?25h[?25l[32;55H:[31;1H[32;55H[K[32;1H:[34h[?25hwq[?25l"helpfulnessMEAN1SORTED.txt" 100L, 4362C written
+
+
+[?1l>[34h[?25h[?1049lluong@f6linux12:~/a2$ vi helpfulnessMEAN1SORTED.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksort -n -k 2 helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txt[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kr[Kt
+
+/home/luong/a2/CUSTOMERS/49202417.txt 2.67  ---> LEAST HELPFUL REVIEWS
+/home/luong/a2/CUSTOMERS/42800127.txt 2.91
+/home/luong/a2/CUSTOMERS/35985708.txt 3.23
+/home/luong/a2/CUSTOMERS/50736950.txt 3.31
+/home/luong/a2/CUSTOMERS/53008075.txt 3.53
+...........
+/home/luong/a2/CUSTOMERS/52500542.txt 37.23
+/home/luong/a2/CUSTOMERS/49786731.txt 38.16
+/home/luong/a2/CUSTOMERS/52012289.txt 41.68
+/home/luong/a2/CUSTOMERS/52447634.txt 41.81
+/home/luong/a2/CUSTOMERS/39134375.txt 57.23 ---> MOST HELPFUL REVIEWS
+
+luong@f6linux12:~/a2$ sort -n -k 2 helpfulnessMEAN1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pvi helpfulnessMEAN1SORTED.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksort -n -k 2 helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd a2vi ~/a2 /helpfulnessMEAN1SORTED.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -n -k 2 ~/a2/helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Pvi ~/a2/helpfulnessMEAN1.txt 
+
+
+
+
+10.----------------------MEAN OF RATING STARS---------------------------------------
+10.----------------------MEAN OF RATING STARS---------------------------------------
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor file in ~/a2/PRODUCTS/*.txt; do total=0; count=0; mean=0; for i in $( awk '{ print $1; }' $file );  do total=$(echo $total+$i | bc ); ((count++)); mean=`echo "scale=2; $total / $count" | bc`; done; echo "$file $mean" >> ~/a2/star_ratingMEAN1.txt; doneMMM[31Pvi ~/a2/helpfulnessMEAN1.txt 
+[K
+[K
+[KMMM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -n -k 2 ~/a2/helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Pvi ~/a2/helpfulnessMEAN1SORTED.txt 
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C [K[3Pcd a2[3Pls
+CUSTOMERS        custcorrelationSORTED.txt  helpfulnessMEAN1SORTED.txt
+PRODUCTS         helpfulnessMEAN.txt
+custcorrelation  helpfulnessMEAN1.txt
+luong@f6linux12:~/a2$ cd PRODUCTS/
+    103     920    6003
+luong@f6linux12:~/a2/PRODUCTS$ cd ~
+luong@f6linux12:~$ cd ~w[Kcd PRODUCTS/[K[4Plssort -n -k 2 helpfulnessMEAN1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pvi helpfulnessMEAN1SORTED.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksort -n -k 2 helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd a2vi ~/a2 /helpfulnessMEAN1SORTED.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csort -n -k 2 ~/a2/helpfulnessMEAN1.txt > helpfulnessMEAN1SORTED.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Pvi ~/a2/helpfulnessMEAN1.txt 
+
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor file in ~/a2/PRODUCTS/*.txt; do total=0; count=0; mean=0; for i in $( awk '{ print $1; }' $file );  do total=$(echo $total+$i | bc ); ((count++)); mean=`echo "scale=2; $total / $count" | bc`; done; echo "$file $mean" >> ~/a2/star_ratingMEAN1.txt; done
+^[[C^[[C        luong@f6linux12:~$ for file in ~/a2/PRODUCTS/*.txt; do total=0; count=0; mean=0; for i in $( awk '{ print $1; }' $file );  do total=$(echo $total+$i | bc ); ((count++)); mean=`echo "scale=2; $total / $count" | bc`; done; echo "$file $mean" >> ~/a2/star_ratingMEAN1.txt; doneMMMcd ~[K
+[K
+luong@f6linux12:~$ sort -n -k 2 helpfulnessMEAN1.txt~helpfulnessMEAN1.txt/helpfulnessMEAN1.txtahelpfulnessMEAN1.txt2helpfulnessMEAN1.txt/helpfulnessMEAN1.txt
+luong@f6linux12:~$ sort -n -k 2 ~/a2/helpfulnessMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[1PMEAN1.txt[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[Kstar_ratingMEAN1.txt 
+/home/luong/a2/PRODUCTS/0312864590.txt 1.68 ---> LOWEST MEAN OF STAR RATINGS REVIEWS
+/home/luong/a2/PRODUCTS/0425198243.txt 2.48
+/home/luong/a2/PRODUCTS/0385337116.txt 2.50
+/home/luong/a2/PRODUCTS/039914563X.txt 2.51
+.............
+/home/luong/a2/PRODUCTS/0671025368.txt 4.71
+/home/luong/a2/PRODUCTS/0439064864.txt 4.75
+/home/luong/a2/PRODUCTS/0439139597.txt 4.77
+/home/luong/a2/PRODUCTS/0590353403.txt 4.78
+/home/luong/a2/PRODUCTS/0439136350.txt 4.84 ---> HIGHEST MEAN OF STAR RATINGS REVIEWS
+luong@f6linux12:~$ exit
+
+Script done on 2021-10-02 01:47:42+00:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,400 @@
+Script started on 2021-11-17 04:59:30+00:00 [TERM="screen" TTY="/dev/pts/1" COLUMNS="157" LINES="84"]
+---------------------------------------1.GET TOP 100 HELPFUL REVIEWS-----------------------------
+luong@f6linux12:~$ cut -f 9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nk2 --reverse | head -n 100 | awk ''{'}'p}'r}'i}'n}'t}'$}'2}'[C[C > top100helpful.txts.txtc.txto.txtr.txte.txt M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+luong@f6linux12:~$ head top100helpfulscore.txt 
+15835
+6539
+5385
+4452
+3517
+3345
+3339
+3179
+3176
+3081
+luong@f6linux12:~$ 
+luong@f6linux12:~$ for i in `cat top100HELPFUL.REVIEWIDS.txt`; do grep $i amazon_reviews_us_Books_v1_02.tsv > ~/REVIEWS/$i.txt; echo $i[C[C[C[C[1@H[1@e[1P[1@e[1P[1@E[1@L[1@F[1@U[1@L[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+luong@f6linux12:~$ vi top100HELPFUL.REVIEWIDS.txt P[K
+[?1049h[?1h=[1;84r[H[J[?25l[84;1H"top100HELPFUL.REVIEWIDS.txt" 102L, 1509C[1;1HR2VDKZ4X1F992Q
+RPUSBNNCSTI4B
+R1T5UD2858KHTO
+R27KG7MNJ5C9LD
+.........
+R1UW73W347V5X1
+R290Y7TOTIM8BP
+R26HJ87AIB72C7
+R1X71M36KHU7CE[84;1H[K[84;140H102,1[9CBot[83;1H[34h[?25h[?25l[84;130Hd[83;1H[34h[?25h[?25l[84;131Hd[83;1H[84;130H  [82;1H
+~                                                                                                                                                            [84;142H1[82;1H[34h[?25h[?25l[84;130H~@k[82;1H[84;130H   [81;1H[84;142H0[81;1H[34h[?25h[?25l[84;130H~@k[81;1H[84;130H   [82;1H[84;142H1[82;1H[34h[?25h[?25l[84;130Hd[82;1H[34h[?25h[?25l[84;131Hd[82;1H[84;130H  [81;1H
+~                                                                                                                                                            [84;142H0[81;1H[34h[?25h[?25l[84;130H~@k[81;1H[84;130H   [80;1H[84;140H99,1 [80;1H[34h[?25h[?25l[84;130H~@k[80;1H[84;130H   [81;1H[84;140H100,1[81;1H[34h[?25h[?25l[84;130H~@k[81;1H[84;130H   [81;1H[34h[?25h[?25l[84;130H~@k[81;1H[84;130H   [81;1H[34h[?25h[?25l[84;130H~@k[81;1H[84;130H   [81;1H[34h[?25h[?25l[84;130H~@k[81;1H[84;130H   [81;1H[34h[?25h[?25l[84;130H:[81;1H[84;130H[K[84;1H:[34h[?25hwq[?25l"top100HELPFUL.REVIEWIDS.txt" 100L, 1479C written
+
+luong@f6linux12:~$ mkdir REVIEWSHELFUL
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -i inplace '{$14=tolower($14); print)' $file; done[C[1P[1@}
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -i inplace '{$14=tolower($14); print}' $file; done)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[54Pcat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `cat top100HELPFUL.REVIEWIDS.txt`; do awk -F'\t' -v id="$i" '$3==id {print $14}' amazon_reviews_us_Books_v1_02.tsv > ~/REVIEWS.HELPFUL/$i.txt; echo $i; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [K
+Funny, most of the reviews on this book are either ecstatic or disgusted. i see both sides. True, this woman DOES think she has reached it and knows absolutely everything; she tries to put the artistic process (for any artist, amateur or professional, in any medium) in a box; she tries to deny that being an artist has to involve any real work; she teaches you to be selfish; and she is awfully repetitive. THAT SAID, a few of her individual ideas are so epiphanic (is that a word?) that if you come to any one of them for the first time, you will have got more than your money's worth. Though the whole thing IS a bit wishy-washy and new-agey, and though some things she thinks are awfully vital just don't seem that huge to me, some of her points nevertheless can't be missed. It goes on an individual basis--some people really need some of this stuff, others have seen it before. Some of the exercises will show you something, some will seem silly. Give it a try, tailor it to your own needs. The people who will get the most out of this book are the many \\"silent poets\\" who have always wanted to try their hand at drawing or dancing or singing but who haven't because they've been afraid of failing or of looking silly. Those with a happy, fulfilling artistic life will roll their eyes over it-but they should realize it is written specifically for people who are dealing with a major block. It's only fair to consider it with that particular audience in mind.
+
+-------------lowercase review body---------------------
+luong@f6linux12:~$ cat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor file in ~/REVIEWS.HELPFUL/*.txt; do awk -i inplace '{$1=tolower($1); print}' $file; done[C[1@ [1@-[1@'[1P[1P[1@-[1@F[1@\[1P[1@'[1@\[1@t[1@'[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@ [1P[1@ 
+okay, we all know the plot, so there's no sense in rehashing it; but this book has generated a great deal of heat and very little light lately, it's been banned in some school districts and attacked as racist garbage, so this review will address the question: is \\"huckleberry finn\\", in fact, a racist book?<br /><br />the charge of racism stems from the liberal use of the n word in describing jim. some black parents and students have charged that the book is humiliating and demeaning to african-americans and therefore is unfit to be taught in school. if there has been a racist backlash in the classroom, i think it is the fault of the readers rather than the book.<br /><br />\\"huckleberry finn\\" is set in missouri in the 1830's and it is true to its time. the narrator is a 13 year old, semi-literate boy who refers to blacks by the n-word because he has never heard them called anything else. he's been brought up to see blacks as slaves, as property, as something less than human. he gets to know jim on their flight to freedom (jim escaping slavery and huck escaping his drunken, abusive father), and is transformed. huck realizes that jim is just as human as he is, a loving father who misses his children, a warm, sensitive, generous, compassionate individual. huck's epiphany arrives when he has to make a decision whether or not to rescue jim when he is captured and held for return to slavery. in the culture he was born into, stealing a slave is the lowest of crimes and the perpetrator is condemned to eternal damnation. by his decision to risk hell to save jim, he saves his own soul. huck has risen above his upbringing to see jim as a friend, a man, and a fellow human being.<br /><br />another charge of racism is based on twain's supposed stereotyping of jim. as portrayed by twain, jim is hardly the ignorant, shuffling uncle tom that was so prevalent in \\"gone with the wind\\" (a book that abundantly deserves the charge of racism). jim may be uneducated, but he is nobody's fool; and his dignity and nobility in the face of adversity is evident throughout the book.<br /><br />so -- is \\"huckleberry finn\\" a racist book? no. it's of its time and for its time and ours as well, portraying a black man with sensitivity, dignity, and sympathy. if shallow, ignorant readers see jim as a caricature and an object of derision, that's their problem. hopefully they may mature enough in their lifetime to appreciate this book as one of the greatest classics of american literature.<br /><br />and for those who might be wondering -- this reviewer is black.<br /><br />judy linde uneducated, but he is nobody's fool; and his dignity and nobility in the face of adversity is evident throughout the book.<br /><br />so -- is \\"huckleberry finn\\" a racist book? no. it's of its time and for its time and ours as well, portraying a black man with sensitivity, dignity, and sympathy. if shallow, ignorant readers see jim as a caricature and an object of derision, that's their problem. hopefully they may mature enough in their lifetime to appreciate this book as one of the greatest classics of american literature.<br /><br />and for those who might be wondering -- this reviewer is black.<br /><br />judy lind
+..........
+funny, most of the reviews on this book are either ecstatic or disgusted. i see both sides. true, this woman does think she has reached it and knows absolutely everything; she tries to put the artistic process (for any artist, amateur or professional, in any medium) in a box; she tries to deny that being an artist has to involve any real work; she teaches you to be selfish; and she is awfully repetitive. that said, a few of her individual ideas are so epiphanic (is that a word?) that if you come to any one of them for the first time, you will have got more than your money's worth. though the whole thing is a bit wishy-washy and new-agey, and though some things she thinks are awfully vital just don't seem that huge to me, some of her points nevertheless can't be missed. it goes on an individual basis--some people really need some of this stuff, others have seen it before. some of the exercises will show you something, some will seem silly. give it a try, tailor it to your own needs. the people who will get the most out of this book are the many \\"silent poets\\" who have always wanted to try their hand at drawing or dancing or singing but who haven't because they've been afraid of failing or of looking silly. those with a happy, fulfilling artistic life will roll their eyes over it-but they should realize it is written specifically for people who are dealing with a major block. it's only fair to consider it with that particular audience in mind.
+
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -F'\t' '{$1=tolower($1); print}' $file; done[C[C[C[C[1@-[1@i[1@ [1@i[1@n[1@p[1@l[1@a[1@c[1@e[1@ 
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=tolower($1); print}' $file; done[11P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[48Pcat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor file in ~/REVIEWS.HELPFUL/*.txt; do awk -i inplace '{$1=tolower($1); print}' $file; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[52Pcat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt 
+funny, most of the reviews on this book are either ecstatic or disgusted. i see both sides. true, this woman does think she has reached it and knows absolutely everything; she tries to put the artistic process (for any artist, amateur or professional, in any medium) in a box; she tries to deny that being an artist has to involve any real work; she teaches you to be selfish; and she is awfully repetitive. that said, a few of her individual ideas are so epiphanic (is that a word?) that if you come to any one of them for the first time, you will have got more than your money's worth. though the whole thing is a bit wishy-washy and new-agey, and though some things she thinks are awfully vital just don't seem that huge to me, some of her points nevertheless can't be missed. it goes on an individual basis--some people really need some of this stuff, others have seen it before. some of the exercises will show you something, some will seem silly. give it a try, tailor it to your own needs. the people who will get the most out of this book are the many \\"silent poets\\" who have always wanted to try their hand at drawing or dancing or singing but who haven't because they've been afraid of failing or of looking silly. those with a happy, fulfilling artistic life will roll their eyes over it-but they should realize it is written specifically for people who are dealing with a major block. it's only fair to consider it with that particular audience in mind.
+
+---------------REMOVE ING/S/ED-----------------------------------
+luong@f6linux12:~$ awk -F'\t' -i inplace '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)}' 1[K[K[K1[K 1' ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@ 
+funny, most of the review on thi book are either ecstatic or disgust. i see both side. true, thi woman doe think she ha reach it and know absolutely everyth; she trie to put the artistic proces (for any artist, amateur or professional, in any medium) in a box; she trie to deny that be an artist ha to involve any real work; she teache you to be selfish; and she i awfully repetitive. that said, a few of her individual idea are so epiphanic (i that a word?) that if you come to any one of them for the first time, you will have got more than your money' worth. though the whole th i a bit wishy-washy and new-agey, and though some thing she think are awfully vital just don't seem that huge to me, some of her point nevertheles can't be miss. it goe on an individual basi--some people really ne some of thi stuff, other have seen it before. some of the exercise will show you someth, some will seem silly. give it a try, tailor it to your own need. the people who will get the most out of thi book are the many \\"silent poet\\" who have alway want to try their hand at draw or danc or sing but who haven't because they've been afraid of fail or of look silly. those with a happy, fulfill artistic life will roll their eye over it-but they should realize it i written specifically for people who are deal with a major block. it' only fair to consider it with that particular audience in mind.
+
+
+luong@f6linux12:~$ awk -F'\t' '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)} 1' ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [C[C[C[C[C[C[1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P $ f i l e ; [C d o n e [1@f[1@o[1@r[1@ [1@$[1@f[1@i[1@l[1@e[1@ [1@i[1@n[1P[1P[1P[1P[1P[1P[1P[1P[1@f[1@i[1@l[1@e[1@ [1@i[1@n[1@ [1@~[1@/[1@R[1@E[1@V[13@IEWS.HELPFUL/[1@*[1@.[1@t[1@x[1@t[1@;[1@ [1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+okay, we all know the plot, so there' no sense in rehash it; but thi book ha generat a great deal of heat and very little light lately, it' been bann in some school district and attack a racist garbage, so thi review will addres the question: i \\"huckleberry finn\\", in fact, a racist book?<br /><br />the charge of racism stem from the liberal use of the n word in describ jim. some black parent and student have charg that the book i humiliat and demean to african-american and therefore i unfit to be taught in school. if there ha been a racist backlash in the classroom, i think it i the fault of the reader rather than the book.<br /><br />\\"huckleberry finn\\" i set in missouri in the 1830' and it i true to it time. the narrator i a 13 year old, semi-literate boy who refer to black by the n-word because he ha never heard them call anyth else. he' been brought up to see black a slave, a property, a someth les than human. he get to know jim on their flight to freedom (jim escap slavery and huck escap hi drunken, abusive father), and i transform. huck realize that jim i just a human a he i, a lov father who misse hi children, a warm, sensitive, generou, compassionate individual. huck' epiphany arrive when he ha to make a decision whether or not to rescue jim when he i captur and held for return to slavery. in the culture he wa born into, steal a slave i the lowest of crime and the perpetrator i condemn to eternal damnation. by hi decision to risk hell to save jim, he save hi own soul. huck ha risen above hi upbring to see jim a a friend, a man, and a fellow human be.<br /><br />another charge of racism i bas on twain' suppos stereotyp of jim. a portray by twain, jim i hardly the ignorant, shuffl uncle tom that wa so prevalent in \\"gone with the wind\\" (a book that abundantly deserve the charge of racism). jim may be uneducat, but he i nobody' fool; and hi dignity and nobility in the face of adversity i evident throughout the book.<br /><br />so -- i \\"huckleberry finn\\" a racist book? no. it' of it time and for it time and our a well, portray a black man with sensitivity, dignity, and sympathy. if shallow, ignorant reader see jim a a caricature and an object of derision, that' their problem. hopefully they may mature enough in their lifetime to appreciate thi book a one of the greatest classic of american literature.<br /><br />and for those who might be wonder -- thi reviewer i black.<br /><br />judy linde uneducat, but he i nobody' fool; and hi dignity and nobility in the face of adversity i evident throughout the book.<br /><br />so -- i \\"huckleberry finn\\" a racist book? no. it' of it time and for it time and our a well, portray a black man with sensitivity, dignity, and sympathy. if shallow, ignorant reader see jim a a caricature and an object of derision, that' their problem. hopefully they may mature enough in their lifetime to appreciate thi book a one of the greatest classic of american literature.<br /><br />and for those who might be wonder -- thi reviewer i black.<br /><br />judy lind
+.......
+funny, most of the review on thi book are either ecstatic or disgust. i see both side. true, thi woman doe think she ha reach it and know absolutely everyth; she trie to put the artistic proces (for any artist, amateur or professional, in any medium) in a box; she trie to deny that be an artist ha to involve any real work; she teache you to be selfish; and she i awfully repetitive. that said, a few of her individual idea are so epiphanic (i that a word?) that if you come to any one of them for the first time, you will have got more than your money' worth. though the whole th i a bit wishy-washy and new-agey, and though some thing she think are awfully vital just don't seem that huge to me, some of her point nevertheles can't be miss. it goe on an individual basi--some people really ne some of thi stuff, other have seen it before. some of the exercise will show you someth, some will seem silly. give it a try, tailor it to your own need. the people who will get the most out of thi book are the many \\"silent poet\\" who have alway want to try their hand at draw or danc or sing but who haven't because they've been afraid of fail or of look silly. those with a happy, fulfill artistic life will roll their eye over it-but they should realize it i written specifically for people who are deal with a major block. it' only fair to consider it with that particular audience in mind.
+
+
+---------------REMOVE PUNCTUATION SYMBOLS AND HTML TAGS----------------------------
+luong@f6linux12:~$ for file in [K[K[K[K[K[K[K[K[K[K[K[Kcat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[76@for file in ~/REVIEWS.HELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)} 1' $file; done[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'{$1=gensub(/\.|,|;|\\|\(|\)|\-|\||\+|\?|\[|\]|\^|\$|\{|\[|[&=!:]|<[^>]*>|["'\'']/,"","g",$1)} 1' $file; done
+okay we all know the plot so there no sense in rehash it but thi book ha generat a great deal of heat and very little light lately it been bann in some school district and attack a racist garbage so thi review will addres the question i huckleberry finn in fact a racist bookthe charge of racism stem from the liberal use of the n word in describ jim some black parent and student have charg that the book i humiliat and demean to africanamerican and therefore i unfit to be taught in school if there ha been a racist backlash in the classroom i think it i the fault of the reader rather than the bookhuckleberry finn i set in missouri in the 1830 and it i true to it time the narrator i a 13 year old semiliterate boy who refer to black by the nword because he ha never heard them call anyth else he been brought up to see black a slave a property a someth les than human he get to know jim on their flight to freedom jim escap slavery and huck escap hi drunken abusive father and i transform huck realize that jim i just a human a he i a lov father who misse hi children a warm sensitive generou compassionate individual huck epiphany arrive when he ha to make a decision whether or not to rescue jim when he i captur and held for return to slavery in the culture he wa born into steal a slave i the lowest of crime and the perpetrator i condemn to eternal damnation by hi decision to risk hell to save jim he save hi own soul huck ha risen above hi upbring to see jim a a friend a man and a fellow human beanother charge of racism i bas on twain suppos stereotyp of jim a portray by twain jim i hardly the ignorant shuffl uncle tom that wa so prevalent in gone with the wind a book that abundantly deserve the charge of racism jim may be uneducat but he i nobody fool and hi dignity and nobility in the face of adversity i evident throughout the bookso  i huckleberry finn a racist book no it of it time and for it time and our a well portray a black man with sensitivity dignity and sympathy if shallow ignorant reader see jim a a caricature and an object of derision that their problem hopefully they may mature enough in their lifetime to appreciate thi book a one of the greatest classic of american literatureand for those who might be wonder  thi reviewer i blackjudy linde uneducat but he i nobody fool and hi dignity and nobility in the face of adversity i evident throughout the bookso  i huckleberry finn a racist book no it of it time and for it time and our a well portray a black man with sensitivity dignity and sympathy if shallow ignorant reader see jim a a caricature and an object of derision that their problem hopefully they may mature enough in their lifetime to appreciate thi book a one of the greatest classic of american literatureand for those who might be wonder  thi reviewer i blackjudy lind
+..........
+funny most of the review on thi book are either ecstatic or disgust i see both side true thi woman doe think she ha reach it and know absolutely everyth she trie to put the artistic proces for any artist amateur or professional in any medium in a box she trie to deny that be an artist ha to involve any real work she teache you to be selfish and she i awfully repetitive that said a few of her individual idea are so epiphanic i that a word that if you come to any one of them for the first time you will have got more than your money worth though the whole th i a bit wishywashy and newagey and though some thing she think are awfully vital just dont seem that huge to me some of her point nevertheles cant be miss it goe on an individual basisome people really ne some of thi stuff other have seen it before some of the exercise will show you someth some will seem silly give it a try tailor it to your own need the people who will get the most out of thi book are the many silent poet who have alway want to try their hand at draw or danc or sing but who havent because theyve been afraid of fail or of look silly those with a happy fulfill artistic life will roll their eye over itbut they should realize it i written specifically for people who are deal with a major block it only fair to consider it with that particular audience in mind
+
+
+--------------------REMOVE STOP WORDS----------------------------------------
+luong@f6linux12:~$ cat stopwords.txt 
+a able about across after all almost also am among an and any are as at be because been but by can cannot could dear did do does either else ever every for from get got had has have he her hers him his how however i if in into is it its just least let like likely may me might most must my neither no nor not of off often on only or other our own rather said say says she should since so some than that the their them then there these they this tis to too twas us wants was we were what when where which while who whom why will with would yet you your
+luong@f6linux12:~$ 
+luong@f6linux12:~$ 
+luong@f6linux12:~$ fo[K[Kcat lo[K[K[K[K[K[Khead liststopwords.txt 
+a
+able
+about
+across
+after
+all
+almost
+also
+am
+among
+
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" $file; done; echo $file; done
+/home/luong/REVIEWS.HELPFUL/R109NJJ7M1WVSA.txt
+/home/luong/REVIEWS.HELPFUL/R10XI57RK1Y3HJ.txt
+/home/luong/REVIEWS.HELPFUL/R1273QROSPVC9Q.txt
+..........
+/home/luong/REVIEWS.HELPFUL/RTLG8BHPCNJY1.txt
+/home/luong/REVIEWS.HELPFUL/RUGSCP3XBNBUV.txt
+/home/luong/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt
+
+
+
+--------------------------REPLACE MANY SPACES TO ONE SPACE && REMOVE 1-2 CHAR--------------------------------
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do sed -i "s/\b[A-Za-z]\{1,2\}\b//g" $file; done
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do sed -i "s/\b[A-Za-z]\{1,2\}\b//g" $file; done[48@for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" $file; done; echo[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor file in ~/REVIEWS.HELPFUL/*.txt; do sed -i 's/[ ]\+/ /g' $file; echo $file; done
+/home/luong/REVIEWS.HELPFUL/R109NJJ7M1WVSA.txt
+/home/luong/REVIEWS.HELPFUL/R10XI57RK1Y3HJ.txt
+/home/luong/REVIEWS.HELPFUL/R1273QROSPVC9Q.txt
+..........
+/home/luong/REVIEWS.HELPFUL/RSNLSOVC98XTT.txt
+/home/luong/REVIEWS.HELPFUL/RTLG8BHPCNJY1.txt
+/home/luong/REVIEWS.HELPFUL/RUGSCP3XBNBUV.txt
+/home/luong/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do sed -i 's/[ ]\+/ /g' $file; echo $file; done[1@"s/\b[A-Za-z]\{1,2\}\b//g"[C[C[C[C[C[C[C[C[C[C[C[C[1P's/[ ]\+/ /g' $file; echo[C[C[C[C[C[C[C[C[C[C[C[C^C
+luong@f6linux12:~$ cat ~/RV[KEVIEWS.HELPFUL/RVFJEZZ01QP58.txt 
+funny review thi book ecstatic disgust see both side true thi woman doe think reach know absolutely everyth trie put artistic proces artist amateur professional medium box trie deny artist involve real work teache selfish awfully repetitive few individual idea epiphanic word come one first time more money worth though whole bit wishywashy newagey though thing think awfully vital dont seem huge point nevertheles cant miss goe individual basisome people really thi stuff seen before exercise show someth seem silly give try tailor need people out thi book many silent poet alway want try hand draw danc sing havent theyve afraid fail look silly those happy fulfill artistic life roll eye over itbut realize written specifically people deal major block fair consider particular audience mind
+
+
+
+---------------------------4. GET SUBSET OF 200 LINES OF TRAINIG TWITTER DATA----------------------------
+luong@f6linux12:~$ mkdir TWEET
+
+luong@f6linux12:~$ for i in {1..200}; do sed -n "${i}p" training.twitter.subset200.csv | awk -F "\",\"" '{print $6}' | sed 's/^"//g' | sed 's/"$//g' > ~/TWEET/tweet.$i.csv; doneMmkdir TWEET[K
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[Krm -rf TWEET/cat ~/TWEET/tweet.1.csv 
+@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D
+
+luong@f6linux12:~$ awk '/know/'[K {print FNR"[K}' training.twitter.subset200.csv 
+39
+43
+92
+110
+117
+122
+123
+138
+luong@f6linux12:~$ awk '/know/ {print FNR}' training.twitter.subset200.csv [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pgrep "know"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CAww[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@complex[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| head -n 1 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Phead -n 10 training.1600000.processed.noemoticon.csv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcat ~/REVIEWS.HELPFUL/R20L37R2QXU1MN.txt[C[2PVFJEZZ01QP58.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Comm -12 <(tr " " "\n" < ~/REVIEWS.HELPFUL/RVFJEZZ01QP58.txt | sort) <(tr " " "\n" < ~/TWEET/tweet.10.csv | sort)[1P[1P[1@3[1@9[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@2[1@0[15@L37R2QXU1MN.txt
+even
+know
+
+----------------SHELL SCRIPT------------------
+Bash script <Cannot run 2 for loops, only can run 1 for loop>
+#!/bin/bash
+for i in `ls REVIEWS.HELPFUL/*.txt`; do for j in `ls TWEET/tweet.*.csv`; do echo "Comparing $i to $j"; common=$(comm -12 <(tr " " "\n" < $i | sort) <(tr " " "\n" < $j | sort) | sort | uniq -c | wc -l); if [ $common -gt 1 ]; then cat $j >> $i; fi; done; done
+------------------------------------------------
+
+--------------------------------5.RUNNING TIME------------------------------------------------------------
+luong@f6linux12:~$ time ./parallel-20211022/src/parallel < commands.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pcat commands.txt | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Phead -n 3 commands.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `ls REVIEWS.HELPFUL/*.txt`; do for j in `ls TWEET/tweet.*.csv`; do echo "common=\$(comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c | wc -l); if [ \$common -gt 1 ] ; then word=\$(comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c); echo \"\$word\" >> commonhelpfulwords.txt; cat $j >> $i; fi" ; done; done > commands.txtM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[162Pwords=$(comm -12 <(tr " " "\n" < REVIEWS.HELPFUL/R109NJJ7M1WVSA.txt | sort) <(tr " " "\n" < TWEET/tweet.10.csv | sort) | sort | uniq -c)
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `ls REVIEWS.HELPFUL/*.txt`; do for j in `ls TWEET/tweet.*.csv`; do echo "common=\$(comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c | wc -l); if [ \$common -gt 1 ] ; then word=\$(comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c); echo \"\$word\" >> commonhelpfulwords.txt; cat $j >> $i; fi" ; done; done > commands.txt
+luong@f6linux12:~$ 
+luong@f6linux12:~$ head -n c[K[K[K[K[K[K[K[K[Kcat coom[K[Kmmo[Kands.txt | wc -l
+20000
+luong@f6linux12:~$ 
+luong@f6linux12:~$ 
+luong@f6linux12:~$ time ./parallel-20211022/src/parallel < commands.txt 
+
+real	1m17.070s
+user	4m49.159s
+sys	2m54.973s
+
+
+----------------------------------6.Clean commonhelpfulwords file----------------------------------------------------
+luong@f6linux12:~$ head commonhelpfulwords.txt 
+      1 make
+      1 sense
+      1 
+      1 know
+      1 
+      1 I
+      1 
+      2 i
+      1 the
+      2 to
+----remove stopwords again--------
+luong@f6linux12:~$ for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonhelpfulwords.txt; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chead commonhelpfulwords.txt [K
+      1 make
+      1 sense
+      1 
+      1 know
+      1 
+      1 I
+      1 
+      2 
+      1 
+      2 
+----remove 1-2 char words----------
+luong@f6linux12:~$ sed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonhelpfulwords.txt 
+luong@f6linux12:~$ sed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonhelpfulwords.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Phead[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+      1 make
+      1 sense
+      1 
+      1 know
+      1 
+      1 
+      1 
+      2 
+      1 
+      2 
+----only keep lines with alphanumeric characters------
+luong@f6linux12:~$ sed "s/[^[:alnum:]-]//g" commonhelpfulwords.txt [Ksed "s/[^[:alnum:]-]//g" commonhelpfulwords.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[?1h=[1;85r[H[J[?25l[85;1H"commonhelpfulwords.txt" 139155L, 1431972C[1;7H1[2;7H1 head[3;7H1 much[4;7H1[5;7H1 now[6;7H1[7;7H1[8;7H1[9;7H1 made[10;7H1[11;7H1 still[12;7H2[13;7H1 those[14;7H2[15;7H1[16;7H1[17;7H1 '[18;7H1[19;7H1[20;7H1 out[21;7H1[22;7H1 week[23;7H1[24;7H1 Hoping[25;7H1[26;7H1[27;7H1[28;7H1 tomorrow[29;7H3[30;7H2[31;7H1[32;7H1[33;7H1 didn'[34;7H2[35;7H1[36;7H1[37;7H1[38;7H1[39;7H1 They[40;7H1[41;7H1[42;7H1[43;7H1[44;7H1[45;7H1[46;7H1[47;7H1[48;7H1[49;7H1[50;7H1[51;7H2[52;7H1 don'[53;7H1 really[54;7H1[55;7H1[56;7H1[57;7H1[58;7H1[59;7H1[60;7H2[61;7H1 isn'[62;7H1 much[63;7H1[64;7H2[65;7H2[66;7H1 Not[67;7H2[68;7H1[69;7H1 big[70;7H1[71;7H1[72;7H1 wish[73;7H1[74;7H1[75;7H1[76;7H1[77;7H1[78;7H1 getting[79;7H1[80;7H1[81;7H1 time[82;7H1[83;7H1 going[84;7H1[85;300H177,7[10C0%[42;7H[34h[?25h[?25l[85;290H:[42;7H[85;1H[K[85;1H:[34h[?25h%s/[?25l[H[J[1;1H      1 make[2;7H1 sense[3;7H1[4;7H1 know[5;7H1[6;7H1[7;7H1[8;7H2[9;7H1[10;7H2[11;7H1[12;7H1[13;7H1[14;7H2[15;7H1 know[16;7H1[17;7H1[18;7H1[19;7H2[20;7H1[21;7H1 know[22;7H1[23;7H1[24;7H1[25;7H1[26;7H1[27;7H1[28;7H1[29;7H1[30;7H1[31;7H1[32;7H1[33;7H1[34;7H1[35;7H1[36;7H1 2[37;7H2[38;7H1[39;7H1 see[40;7H1[41;7H1[42;7H1 '[43;7H1 actually[44;7H1[45;7H1[46;7H1[47;7H1[48;7H3[49;7H1[50;7H1 '[51;7H1[52;7H2[53;7H1[54;7H1 thought[55;7H1[56;7H1[57;7H1[58;7H1[59;7H1[60;7H1 tomorrow[61;7H1[62;7H1[63;7H1[64;7H1[65;7H1[66;7H1[67;7H1[68;7H1[69;7H2[70;7H1[71;7H1[72;7H1[73;7H1[74;7H1[75;7H1[76;7H2[77;7H1[78;7H1[79;7H1[80;7H1[81;7H1[82;7H1[83;7H1[84;7H1[85;300H1,1[11CTop:%s/[85;300H[K[85;6H[34h[?25h[?25l[1;2H [85;300H1,1[11CTop[85;300H[K[85;7H[34h[?25h[?25l[1;3H [85;300H1,1[11CTop[85;300H[K[85;8H[34h[?25h[?25l[1;4H [85;300H1,1[11CTop[85;300H[K[85;9H[34h[?25h[?25l[1;5H [85;300H1,1[11CTop[85;300H[K[85;10H[34h[?25h[?25l[1;6H [85;300H1,1[11CTop[85;300H[K[85;11H[34h[?25h/[?25l[288C1,1[11CTop[85;300H[K[85;12H[34h[?25h/[?25l[287C1,1[11CTop[85;300H[K[85;13H[34h[?25hg[?25l[286C1,1[11CTop[85;300H[K[85;14H[34h[?25h[?25l139155 substitutions on 139155 lines[84;1H[1;1H1 [1;3H[K[2;1H1[2;7H[K[3;1H1[3;7H[K[4;1H1 class[4;9H[K[5;1H1[5;7H[K[6;1H2[6;7H[K[7;1H1 more[7;7H[K[8;1H1[8;7H[K[9;1H1 paid[9;7H[K[10;1H1[10;7H[K[11;1H1[11;7H[K[12;1H1[12;7H[K[13;1H1[13;7H[K[14;1H1 2[14;7H[K[15;1H1 don'[15;7H[K[16;1H1 know[16;7H[K[17;1H1[17;7H[K[18;1H1 wednesday
+1[19;7H[K[20;1H1[20;7H[K[21;1H1[21;7H[K[22;1H2[22;7H[K[23;1H1[23;7H[K[24;1H1[24;7H[K[25;1H1[25;7H[K[26;1H1[26;7H[K[27;1H1[27;7H[K[28;1H1[28;7H[K[29;1H1[29;7H[K[30;1H1 pray[30;7H[K[31;1H1 start
+1 still
+1[33;7H[K[34;1H1[34;7H[K[35;1H1[35;7H[K[36;1H1[36;7H[K[37;1H2 ,[37;7H[K[38;1H1 ?[38;7H[K[39;1H1[39;7H[K[40;1H1 being
+1[41;7H[K[42;1H1 find[42;7H[K[43;1H1[43;7H[K[44;1H1 more[44;7H[K[45;1H1 really
+1[46;7H[K[47;1H1 someone
+1[48;7H[K[49;1H1 think
+1[50;7H[K[51;1H2[51;7H[K[52;1H1[52;7H[K[53;1H1[53;7H[K[54;1H1[54;7H[K[55;1H1[55;7H[K[56;1H1 sick[56;7H[K[57;1H1[57;7H[K[58;1H1 2[58;7H[K[59;1H1[59;7H[K[60;1H1[60;7H[K[61;1H1[61;7H[K[62;1H1 party
+1[63;7H[K[64;1H1[64;7H[K[65;1H1[65;7H[K[66;1H1 Too[66;7H[K[67;1H1 actually
+1 bad[68;7H[K[69;1H1[69;7H[K[70;1H1[70;7H[K[71;1H1 money
+1[72;7H[K[73;1H1[73;7H[K[74;1H2 one[74;7H[K[75;1H1[75;7H[K[76;1H1 wasn'
+1[77;7H[K[78;1H1[78;7H[K[79;1H1 don'[79;7H[K[80;1H1 follow
+1[81;7H[K[82;1H1[82;7H[K[83;1H1 ,[83;7H[K[84;1H1 work[84;7H[K[85;300H139155,1      Bot[85;300H[K[85;300H139155,1      Bot[84;1H[34h[?25h[?25l[34h[?25h[?25l[85;290H:[84;1H[85;1H[K[85;1H:[34h[?25hwq[?25l"commonhelpfulwords.txt" 139155L, 597042C written
+[?1l>[34h[?25h[?1049lluong@f6linux12:~$ awk '$1 ~ /^[a-zA-Z]+$/'[1P[1@2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C '{'p'r'i'n't'}'[C commonhelpfulwords.txt 
+1 make
+1 sense
+1 know
+1 know
+.......
+1 actually
+1 bad
+1 money
+2 one
+1 follow
+1 work
+luong@f6linux12:~$ awk '$2 ~ /^[a-zA-Z]+$/ {print}' commonhelpfulwords.txt [1@-[1@i[1@ [1@i[1@n[1@p[1@l[1@a[1@c[1@e[1@ [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@-[1@i[1@ [1@i[1@n[1@p[1@l[1@a[1@c[1@e[1@ 
+luong@f6linux12:~$ vi commonhelpfulwords.txt 
+[?1049h[?1h=[1;85r[H[J[?25l[85;1H"commonhelpfulwords.txt" 35054L, 262621C[1;1H1 make
+1 sense
+1 know
+1 know
+1 know
+...
+1 now
+1 one
+1 problem
+1 still
+1 new[85;300H1,1[11CTop[1;1H[34h[?25h[?25l[85;290H^[[1;1H[85;290H  [1;1H[85;290H^[[1;1H[85;290H  [1;1H[34h[?25h[?25l[85;290H:[1;1H[85;1H[K[85;1H:[34h[?25hq[?25l[85;1H[K[85;1H[?1l>[34h[?25h[?1049lluong@f6linux12:~$ awk '{arr[$1[K2] = [K[K[K+=$1} END {for i[K(i in arr) {print i, arr[i]))[K[K}}' commonhelpfulwords.txt 
+remain 8
+Why 98
+before 32
+show 120
+......
+mad 1
+understood 4
+sore 99
+held 5
+
+--------------total occurences of valid words-------------------
+--------------Top 10 REVIEWHELPFULWORDS-------------------------
+luong@f6linux12:~$ awk '{arr[$2]+=$1} END {for (i in arr) {print i, arr[i]}}' commonhelpfulwords.txt | sort -nk2 --reverse | head -n 10
+out 1283
+now 817
+still 807
+tomorrow 784
+see 725
+really 723
+day 714
+going 684
+one 666
+sad 595
+
+Script started on 2021-11-19 10:18:24+00:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="317" LINES="85"]
+---------------------------------7.UNHELPFUL REVIEWS------------------------------------------------------
+---------------------------------7.UNHELPFUL REVIEWS------------------------------------------------------
+
+-----------Get 100 review bodies of unhelpfulness reviews---------------------------
+luong@f6linux12:~$ 
+luong@f6linux12:~$ awk -F'\t' -v id="R1LVRBD4ZZQ1UL" '$3==id {print $14}' amazon_reviews_us_Books_v1_02.tsv[2@"id"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pid[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@"id"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ~/id/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[47Pcat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt [1PFRYYH4G0D958[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `cat top100UNHELPFUL.REVIEWIDS.txt`; do awk -F'\t' -v id="$i" '$3 ~/id/ {print $14}' amazon_reviews_us_Books_v1_02.tsv > ~/REVIEWS.UNHELPFUL/$i.txt; echo $i; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/REVIEWS.UNHELPFUL/RFRYYH4G0D958.txt [K[1@1LVRBD4ZZQ1UL[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk -F'\t' -v id="R1LVRBD4ZZQ1UL" '$3 ~/id/ {print $14}' amazon_reviews_us_Books_v1_02.tsv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[47Pcat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt [1PFRYYH4G0D958[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in `cat top100UNHELPFUL.REVIEWIDS.txt`; do awk -F'\t' -v id="$i" '$3 ~/id/ {print $14}' amazon_reviews_us_Books_v1_02.tsv > ~/REVIEWS.UNHELPFUL/$i.txt; echo $i; done[1P[1P[1P[1@=[1@=[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+R1TNWRKIVHVYOV
+R1VKEE2NWSWDRU
+R2UP6XSVYJBJ2H
+........
+RFRYYH4G0D958
+R1LVRBD4ZZQ1UL
+
+-----------GET REVIEW BODIES FROM TOP 100 UNHELPFUL REVIEW IDS--------------------
+luong@f6linux12:~$ for i in `cat top100UNHELPFUL.REVIEWIDS.txt`; do awk -F'\t' -v id="$i" '$3==id {print $14}' amazon_reviews_us_Books_v1_02.tsv > ~/REVIEWS.UNHELPFUL/$i.txt; echo $i; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[81Pawk -F'\t' -v id="R1LVRBD4ZZQ1UL" '$3==id {print $14}' amazon_reviews_us_Books_v1_02.tsv[2@"id"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ~/id/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[47Pcat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt 
+The recepes are really nice and creative, but if you're trying to eat healthier--this is a book to skip. Just because a recipe is full of grilled veggies, the \\"health\\" benefits lessen when you dump enough olive oil, cheeses, etc on them to increase the fat content to a whopping 25-35 grams per serving--of which a lion's share of these recepes sport.  <br /> <br />The rubs and marinades section in the back is good, but if you're watching your weight, and don't like to constantly modify your cooking--grill or otherwise--to keep the fat at bay, this is not the book you want.
+
+
+-----------CHANGE WHOLE BODY TO LOWERCASE------------------
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; R1LVRBD4ZZQ1UL[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K do awk -F'\t' -i inplace '{$1=tolower($1); print}' $file; donedo awk -F'\t' -i inplace '{$1=tolower($1); print}' $file; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=tolower($1); print}' $file; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[58Pcat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt 
+the recepes are really nice and creative, but if you're trying to eat healthier--this is a book to skip. just because a recipe is full of grilled veggies, the \\"health\\" benefits lessen when you dump enough olive oil, cheeses, etc on them to increase the fat content to a whopping 25-35 grams per serving--of which a lion's share of these recepes sport.  <br /> <br />the rubs and marinades section in the back is good, but if you're watching your weight, and don't like to constantly modify your cooking--grill or otherwise--to keep the fat at bay, this is not the book you want.
+
+-----------REMOVE ING, ED, S INPLACE WITH AWK-----------------------
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)} 1' $file; done
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)} 1' $file; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+luong@f6linux12:~$ for file in ~/REVIEWS.HELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)} 1' $file; done[C[1@U[1@N[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/(ing|ed|s)\>/,"","g",$1)} 1' $file; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[72Pcat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt 
+the recepe are really nice and creative, but if you're try to eat healthier--thi i a book to skip. just because a recipe i full of grill veggie, the \\"health\\" benefit lessen when you dump enough olive oil, cheese, etc on them to increase the fat content to a whopp 25-35 gram per serv--of which a lion' share of these recepe sport.  <br /> <br />the rub and marinade section in the back i good, but if you're watch your weight, and don't like to constantly modify your cook--grill or otherwise--to keep the fat at bay, thi i not the book you want.
+
+----------REMOVE PUNCTUATION SYMBOLS AND HTML TAGS------------
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/\.|,|;|\\|\(|\)|\-|\||\+|\?|\[|\]|\^|\$|\{|\[|[&=!:]|<[^>]*>|["'\'']/,"","g",$1)} 1' $file; done
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do awk -F'\t' -i inplace '{$1=gensub(/\.|,|;|\\|\(|\)|\-|\||\+|\?|\[|\]|\^|\$|\{|\[|[&=!:]|<[^>]*>|["'\'']/,"","g",$1)} 1' $file; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt [K
+the recepe are really nice and creative but if youre try to eat healthierthi i a book to skip just because a recipe i full of grill veggie the health benefit lessen when you dump enough olive oil cheese etc on them to increase the fat content to a whopp 2535 gram per servof which a lion share of these recepe sport   the rub and marinade section in the back i good but if youre watch your weight and dont like to constantly modify your cookgrill or otherwiseto keep the fat at bay thi i not the book you want
+luong@f6linux12:~$ 
+luong@f6linux12:~$ 
+
+-----------REMOVE STOP WORDS------------------------
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt;for file in ~/REVIEWS.UNHELPFUL/*.txt;[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K for file in ~/REVIEWS.UNHELPFUL/*.txt;[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdo for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" $file; done; echo $file; done
+/home/luong/REVIEWS.UNHELPFUL/R113DTRQDSN29K.txt
+/home/luong/REVIEWS.UNHELPFUL/R12CUIV8LIFCYD.txt
+/home/luong/REVIEWS.UNHELPFUL/R13T7B40Z4DAE6.txt
+........
+/home/luong/REVIEWS.UNHELPFUL/RYAKOMK44DE58.txt
+/home/luong/REVIEWS.UNHELPFUL/RYRDVTBIWVF0.txt
+/home/luong/REVIEWS.UNHELPFUL/RYRTISCRC7DRV.txt
+
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" $file; done; echo $file; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt [K
+ recepe  really nice  creative   youre try  eat healthierthi   book  skip    recipe  full  grill veggie  health benefit lessen   dump enough olive oil cheese etc    increase  fat content   whopp 2535 gram per servof   lion share   recepe sport    rub  marinade section   back  good   youre watch  weight  dont   constantly modify  cookgrill  otherwiseto keep  fat  bay thi    book  want
+
+
+-----------REMOVE 1-2 CHAR----------------------------
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do sed -i "s/\b[A-Za-z]\{1,2\}\b//g" $file; donedo sed -i "s/\b[A-Za-z]\{1,2\}\b//g" $file; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+
+-----------MULPTIPLE SPACES TO ONE SPACE-------------
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do sed -i "s/\b[A-Za-z]\{1,2\}\b//g" $file; done[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksed -i 's/[ ]\+/ /g' $file; done
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt; do sed -i 's/[ ]\+/ /g' $file; done[13@"s/\b[A-Za-z]\{1,2\}\b//g"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[44Pcat ~/REVIEWS.UNHELPFUL/R1LVRBD4ZZQ1UL.txt 
+ recepe really nice creative youre try eat healthierthi book skip recipe full grill veggie health benefit lessen dump enough olive oil cheese etc increase fat content whopp 2535 gram per servof lion share recepe sport rub marinade section back good youre watch weight dont constantly modify cookgrill otherwiseto keep fat bay thi book want
+
+-----------WRITE ALL COMMANDS TO A TXT FILE-------------
+luong@f6linux12:~$ for file in ~/REVIEWS.UNHELPFUL/*.txt;for file in ~/REVIEWS.UNHELPFUL/*.txt;[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K [C[1P[1@n[1P[1P[1P[1P[1@i[C[C[C[C[C[C[1P[1P[1@`[1@l[1@s[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@`[C[C for file in ~/REVIEWS.UNHELPFUL/*.txt; [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [1P [K[1P [1P [K[1P [1P [1P [1P [K[1P [1P [1P do for j in `ls TWEET/tweet.*.csv`; do echo "common=\$(comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c | wc -l); if [ \$common -gt 1 ] ; then word=\$(comm -12 <(tr \" \" \"\n\" < $i | sort) <(tr \" \" \"\n\" < $j | sort) | sort | uniq -c); echo \"\$word\" >> commonhelpfulwords.txt; cat $j >> $i; fi" ; done; done > commands u n h e l p f u l . t x t [C[C[C[C[C[1@U[1@N
+
+-----------RUNNING TIME---------------------------------------------
+luong@f6linux12:~$ time ./parallel-20211022/src/parallel < commandsunhelpful.txt 
+
+real	1m14.749s
+user	4m16.525s
+sys	2m34.530s
+
+
+------------CLEAN COMMON UNHELPFUL WORDS----------------------------
+luong@f6linux12:~$ head -n 1[K10 commonun[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcat -n 10[K[K[K[K[Kcommmonun[K[KUN[1PonUN[C[C[C[Chelpfulwords.txt | head -n 10
+      1 
+      1 fail
+      1 hope
+      1 such
+      1 
+      1 work
+      1 
+      1 back
+      1 my
+      1 time
+luong@f6linux12:~$ for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g"for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K commonUNhelpfulwords.txt [K; dome[K[Kne
+luong@f6linux12:~$ head -n 10 commonUNhelpfulwords2.txt [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@a[1@t[C[1@ [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C| head -n 10
+luong@f6linux12:~$ cat commonUNhelpfulwords2.txt | head -n 10[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcat commonUNhelpfulwords2.txt | head -n 10[1P
+      1 
+      1 fail
+      1 hope
+      1 such
+      1 
+      1 work
+      1 
+      1 back
+      1 
+      1 time
+luong@f6linux12:~$ 
+luong@f6linux12:~$ cat commonUNhelpfulwords.txt | head -n 10[1@2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Phead -n 10 commonUNhelpfulwords2.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[49@awk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Psed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27@awk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt > commonUNhelpfulwords2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonUNhelpfulwords.txt; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35Psed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pawk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Phead -n 10 commonUNhelpfulwords2.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat commonUNhelpfulwords2.txt | head -n 10[K[K[K[K[K[K[K[K[K[Kwc -l[1P
+105740
+luong@f6linux12:~$ cat commonUNhelpfulwords.txt | wc -lhead -n 10[1@2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Phead -n 10 commonUNhelpfulwords2.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >>commonUNhelpfulwords2.txt[C commonUNhelpfulwords2.txt
+luong@f6linux12:~$ awk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >> commonUNhelpfulwords2.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[50Pcat commonUNhelpfulwords.txt | wc -l[C[1@2
+0
+luong@f6linux12:~$ cat commonUNhelpfulwords2.txt | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >> commonUNhelpfulwords2.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktxt | wc -l
+0
+luong@f6linux12:~$ awk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt | wc -l[1P[1@2[Kvi commonUNhelpfulwords.txt
+[?1049h[?1h=[1;85r[H[J[?25l[85;1H"commonUNhelpfulwords.txt" 105740L, 1080107C[1;7H1[2;7H1 fail[3;7H1 hope[4;7H1 such[5;7H1[6;7H1 work[7;7H1[8;7H1 back[9;7H1[10;7H1 time[11;7H1[12;7H1[13;7H1[14;7H1 over[15;7H2[16;7H1[17;7H1 break[18;7H1[19;7H1[20;7H1[21;7H1 behind[22;7H1[23;7H2[24;7H1[25;7H1 times[26;7H1[27;7H1[28;7H1[29;7H1[30;7H1[31;7H1[32;7H1[33;7H1[34;7H1 tell[35;7H1[36;7H1[37;7H1[38;7H1[39;7H1 make[40;7H1[41;7H1 thing.[42;7H1[43;7H1 hope[44;7H1[45;7H1[46;7H1[47;7H1[48;7H1[49;7H1 same[50;7H1[51;7H1[52;7H1[53;7H1[54;7H1[55;7H1[56;7H1 know[57;7H1 yeah[58;7H1[59;7H1[60;7H1[61;7H1[62;7H1[63;7H1[64;7H1[65;7H1[66;7H1[67;7H3[68;7H1[69;7H2[70;7H1[71;7H1[72;7H1[73;7H1[74;7H1[75;7H1[76;7H1[77;7H2[78;7H1 2[79;7H1 ![80;7H1 know[81;7H1[82;7H1[83;7H1[84;7H2[85;300H1,1[11CTop[1;1H[34h[?25h[?25l[85;290H:[1;1H[85;1H[K[85;1H:[34h[?25h%s/[?25l[1;1H [85;300H1,1[11CTop[85;300H[K[85;6H[34h[?25h[?25l[1;2H [85;300H1,1[11CTop[85;300H[K[85;7H[34h[?25h[?25l[1;3H [85;300H1,1[11CTop[85;300H[K[85;8H[34h[?25h[?25l[1;4H [85;300H1,1[11CTop[85;300H[K[85;9H[34h[?25h[?25l[1;5H [85;300H1,1[11CTop[85;300H[K[85;10H[34h[?25h[?25l[1;6H [85;300H1,1[11CTop[85;300H[K[85;11H[34h[?25h/[?25l[288C1,1[11CTop[85;300H[K[85;12H[34h[?25h/[?25l[287C1,1[11CTop[85;300H[K[85;13H[34h[?25hg[?25l[286C1,1[11CTop[85;300H[K[85;14H[34h[?25h[?25l105740 substitutions on 105740 lines[84;1H[1;1H1 [1;3H[K[2;1H1[2;7H[K[3;1H1 didn'[3;9H[K[4;1H1[4;7H[K[5;1H1[5;7H[K[6;1H1[6;7H[K[7;1H1[7;7H[K[8;1H1[8;7H[K[9;1H1[9;7H[K[10;1H1[10;7H[K[11;1H1[11;7H[K[12;1H1 class
+1[13;7H[K[14;1H2[14;7H[K[15;1H1 more[15;7H[K[16;1H1[16;7H[K[17;1H1 paid[17;7H[K[18;1H1[18;7H[K[19;1H1[19;7H[K[20;1H1[20;7H[K[21;1H1 don'[21;7H[K[22;1H1 know[22;7H[K[23;1H1[23;7H[K[24;1H1[24;7H[K[25;1H1[25;7H[K[26;1H1[26;7H[K[27;1H2[27;7H[K[28;1H1[28;7H[K[29;1H1[29;7H[K[30;1H1[30;7H[K[31;1H1[31;7H[K[32;1H1[32;7H[K[33;1H1[33;7H[K[34;1H1 pray[34;7H[K[35;1H1 start
+1 still
+1[37;7H[K[38;1H1[38;7H[K[39;1H1[39;7H[K[40;1H1[40;7H[K[41;1H2 ,[41;7H[K[42;1H1 ?[42;7H[K[43;1H1[43;7H[K[44;1H1 being
+1[45;7H[K[46;1H1 find[46;7H[K[47;1H1[47;7H[K[48;1H1 more[48;7H[K[49;1H1 really[49;9H[K[50;1H1[50;7H[K[51;1H1 someone
+1[52;7H[K[53;1H1 think
+1[54;7H[K[55;1H2[55;7H[K[56;1H1[56;7H[K[57;1H1[57;7H[K[58;1H1[58;7H[K[59;1H1[59;7H[K[60;1H1 sick[60;7H[K[61;1H1[61;7H[K[62;1H1 2[62;7H[K[63;1H1[63;7H[K[64;1H1[64;7H[K[65;1H1[65;7H[K[66;1H1 party
+1[67;7H[K[68;1H1[68;7H[K[69;1H1[69;7H[K[70;1H1 Too[70;7H[K[71;1H1 bad[71;7H[K[72;1H1[72;7H[K[73;1H1[73;7H[K[74;1H1[74;7H[K[75;1H1[75;7H[K[76;1H2 one[76;7H[K[77;1H1[77;7H[K[78;1H1[78;7H[K[79;1H1[79;7H[K[80;1H1 don'[80;7H[K[81;1H1[81;7H[K[82;1H1[82;7H[K[83;1H1 ,[83;7H[K[84;1H1 work[84;7H[K[85;300H105740,1      Bot[85;300H[K[85;300H105740,1      Bot[84;1H[34h[?25h[?25l[34h[?25h[?25l[85;290H:[84;1H[85;1H[K[85;1H:[34h[?25hwq[?25l"commonUNhelpfulwords.txt" 105740L, 445667C written
+[?1l>[34h[?25h[?1049lluong@f6linux12:~$ vi commonUNhelpfulwords.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$2 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt | wc -l[C[28Pcat commonUNhelpfulwords2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >> commonUNhelpfulwords2.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[50Pcat commonUNhelpfulwords.txt | wc -lhead -n 10[1@2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Phead -n 10 commonUNhelpfulwords2.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[49@awk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Psed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonUNhelpfulwords.txt; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[53Pcat commonUNhelpfulwords.txt | head -n 10[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonUNhelpfulwords.txt; done
+luong@f6linux12:~$ for word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonUNhelpfulwords.txt; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi commonUNhelpfulwords.txt[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$2 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat commonUNhelpfulwords2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >> commonUNhelpfulwords2.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[50Pcat commonUNhelpfulwords.txt | wc -lhead -n 10[1@2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Phead -n 10 commonUNhelpfulwords2.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[49@awk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Psed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords[C[C[C[C[C
+luong@f6linux12:~$ sed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonUNhelpfulwords.txt; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi commonUNhelpfulwords.txt[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$2 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt | wc -l
+25107
+
+luong@f6linux12:~$ awk '$2 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt | wc -l[K[K[K[K[K[K[K[K [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@sed -i "s/\b[A-Za-z]\{1,2\}\b//g"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pawk '$2 ~ /^[a-zA-Z]+$/ {print}'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C>>[K [K> commonUNhelpfulwords2.txt
+
+luong@f6linux12:~$ awk '$2 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt >> commonUNhelpfulwords2.txt| wc -l[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Psed -i "s/\b[A-Za-z]\{1,2\}\b//g" commonUNhelpfulwords.txt [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor word in `cat liststopwords.txt`; do sed -i "s/\<$word\>//g" commonUNhelpfulwords.txt; done[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi commonUNhelpfulwords.txt[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cawk '$1 ~ /^[a-zA-Z]+$/ {print}' commonUNhelpfulwords.txt | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat commonUNhelpfulwords2[C[C[C[C[C[C[C[C[C[C[C[C
+25107
+luong@f6linux12:~$ head commonUNhelpfulwords2.txt
+1 fail
+1 hope
+1 such
+1 work
+1 back
+1 time
+1 over
+1 break
+1 behind
+1 times
+
+
+-----TOP 10 WORDS IN UNHELPFUL REVIEWS--------------
+luong@f6linux12:~$ awk '{arr[$2]+=$1} END {for (i in arr) {print i, arr[i]}}' commonUNhelpfulwords2.txt | sort -nk2 --reverse | head -n 10
+out 976
+still 646
+now 644
+tomorrow 616
+see 585
+day 573
+really 569
+one 533
+going 529
+hate 485
+luong@f6linux12:~$ exit
+
+Script done on 2021-11-19 11:26:00+00:00 [COMMAND_EXIT_CODE="0"]
